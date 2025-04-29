@@ -1826,3 +1826,36 @@ body.is-preload #footer {
 	display: flex;
 	justify-content: space-between;
 }
+
+/* Couleurs des icônes */
+.html-icon {
+    color: #E34F26; /* Couleur HTML */
+}
+
+.js-icon {
+    color: #F7DF1E; /* Couleur JavaScript */
+}
+
+.css-icon {
+    color: #1572B6; /* Couleur CSS */
+}
+
+.python-icon {
+    color: #306998; /* Couleur Python */
+}
+
+.csharp-icon {
+    color: #5A2E8C; /* Couleur C# */
+}
+
+.caml-icon {
+    color: #000080; /* Couleur CamL (peut être personnalisée) */
+}
+
+.cpp-icon {
+    color: #00599C; /* Couleur C++ */
+}
+
+.sql-icon {
+    color: #F29111; /* Couleur SQL (ou vous pouvez utiliser une couleur de base comme #4F4F4F) */
+}
