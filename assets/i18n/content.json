@@ -4,11 +4,11 @@
     "header": {
       "name": "Maxandre",
       "greeting": {
-        "morning": "&#x1f305; Bonjour",
-        "afternoon": "&#x26C5; Bonjour",
-        "evening": "&#x1F319; Bonsoir"
+        "morning": "&#x1f305; Bonjour !",
+        "afternoon": "&#x26C5; Bonjour !",
+        "evening": "&#x1F319; Bonsoir !"
       },
-      "introHtml": "Bienvenue sur mon portfolio, je suis étudiant en informatique et voici mes projets personnels et professionnels.<br>Voici mon <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> pour plus d'informations."
+      "introHtml": "Bienvenue sur mon portfolio, je suis étudiant en informatique et voici mes projets personnels et professionnels. <br>Voici mon <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> pour plus d'informations."
     },
     "nav": {
       "about": "A propos",
@@ -18,12 +18,16 @@
     },
     "about": {
       "title": "A propos",
-      "bioHtml": "Actuellement étudiant en informatique à l'Université de Paris-Saclay, mon ambition est de me spécialiser dans la sécurité informatique après avoir intégré une école d'ingénieurs. En parallèle, je consacre une partie de mon temps à perfectionner mes compétences en développement web, avec un intérêt particulier pour les technologies modernes et la création de solutions sécurisées. Mon projet personnel est également de contribuer à des projets open source dans le domaine de la cybersécurité, afin d’enrichir mes connaissances pratiques tout en participant à la communauté.",
+      "bioHtml": "Actuellement étudiant ingénieur à l'EFREI en majeure Réseaux et Sécurité, je souhaite devenir expert en cybersécurité. En parallèle, je consacre une partie de mon temps libre à perfectionner mes compétences en développement full-stack ainsi que mes connaissances des outils de sécurité. Je passe également la majeure partie de mon temps libre à me consacrer à ma deuxième passion : la musique, particulièrement le piano.",
       "educationTitle": "Parcours",
       "education": [
-        {
+        { 
           "icon": "fa-solid fa-graduation-cap",
-          "text": "2024 / 2026 - IUT Orsay, université informatique, section anglophone"
+          "text": "2026 / 2029 - EFREI Paris, majeure Réseaux et Sécurité, cycle ingénieur"
+        },
+        { 
+          "icon": "fa-solid fa-graduation-cap",
+          "text": "2024 / 2026 - IUT d'Orsay, obtention d'un DUT informatique spécialité réseaux et sécurité des applications, section anglophone"
         },
         {
           "icon": "fa-solid fa-graduation-cap",
@@ -35,7 +39,7 @@
         },
         {
           "icon": "fa-solid fa-briefcase",
-          "text": "2019 / 2022 - 3 stages d'une semaine en développement web"
+          "text": "2019 / 2022 - 3 stages en développement web"
         },
         {
           "icon": "fa-solid fa-heart-pulse",
@@ -46,13 +50,14 @@
     "skills": {
       "title": "Compétences",
       "softSkills": "Travail en équipe, polyvalence, pédagogie, adaptabilité",
-      "languagesHtml": "<i class=\"fab fa-html5\"></i> HTML, <i class=\"fab fa-js\"></i> JavaScript, <i class=\"fab fa-css3-alt\"></i> CSS, <i class=\"fab fa-python\"></i> Python, <i class=\"fab fa-cuttlefish\"></i> C#, <i class=\"fab fa-code\"></i> CamL, <i class=\"fab fa-cuttlefish\"></i> C++, <i class=\"fas fa-database\"></i> SQL",
-      "tools": "Développement d'applications et de sites web, utilisation de moteurs de jeux et GIT",
+      "languagesHtml": "<i class=\"fab fa-html5\"></i> HTML, <i class=\"fab fa-js\"></i> JavaScript, <i class=\"fab fa-css3-alt\"></i> CSS, <i class=\"fab fa-python\"></i> Python, <i class=\"fab fa-cuttlefish\"></i> C#, <i class=\"fab fa-cuttlefish\"></i> C++, <i class=\"fas fa-database\"></i> SQL",
+      "tools": "Développement d'applications et de sites web, utilisation de moteurs graphiques, GIT",
+      "cybersecurity": "Outils de cybersécurité (Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall...)",
       "spoken": "Anglais (C1), Espagnol (A2), Français (langue natale)",
       "experienceTitle": "Expérience",
       "experience": [
+        "2026 - Développement d'un réseau social avec Flutter et Firebase",
         "2023 - Création de deux sites web pour des entreprises commerciales",
-        "2023 - Développement et publication d'un jeu vidéo Android, en collaboration avec un designer graphique",
         "2019 - 2024 - Production de deux jeux multijoueurs",
         "Plus d'informations sur mes projets dans la <a href=\"#work\">page de travaux</a>"
       ]
@@ -156,15 +161,6 @@
             "Conception d'une interface moderne et adaptée à l'industrie audiovisuelle"
           ]
         },
-        "socialMedia": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/MessageApp\" target=\"_blank\" rel=\"noopener noreferrer\">Social Media</a> - 2025",
-          "descriptionHtml": "Je travaille actuellement sur un projet de réseau social ! En utilisant React Native et Firebase, j'ai déjà créé un système de messagerie fonctionnel avec des contacts et plus. Je prévois de travailler sur un système de publication pour partager des informations.",
-          "bullets": [
-            "Développement d'une application mobile avec React Native",
-            "Utilisation de Firebase pour la gestion des utilisateurs et des messages",
-            "Conception d'une interface utilisateur pour un réseau social moderne"
-          ]
-        },
         "mediafinder": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a> - 2024",
           "descriptionHtml": "Mediafinder est un site web créé dans le cadre d'un projet scolaire. L'objectif était de construire un site pour une association dont le but est de rassembler des personnes afin de retrouver des médias perdus.",
@@ -188,6 +184,15 @@
             "Gestion clients/serveur (téléphones des joueurs)",
             "Projet fait en équipe (3 personnes)"
           ]
+        },
+        "asiimov": {
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Asiimov\" target=\"_blank\" rel=\"noopener noreferrer\">Asiimov</a> - 2025/2026",
+          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie fonctionnel, ainsi que des publications en fonction des personnes que l'on suit.",
+          "bullets": [
+            "Développement d'une application mobile avec Flutter (Dart)",
+            "Utilisation de Firebase pour la gestion des utilisateurs et des messages",
+            "Conception d'une interface utilisateur pour un réseau social moderne"
+          ]
         }
       }
     },
@@ -204,11 +209,11 @@
     "header": {
       "name": "Maxandre",
       "greeting": {
-        "morning": "&#x1f305; Good morning",
-        "afternoon": "&#x26C5; Good afternoon",
-        "evening": "&#x1F319; Good evening"
+        "morning": "&#x1f305; Good morning!",
+        "afternoon": "&#x26C5; Good afternoon!",
+        "evening": "&#x1F319; Good evening!"
       },
-      "introHtml": "Welcome to my portfolio, I'm a French computer science student and here are some of my personal and professional projects.<br>Check my <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> for more details."
+      "introHtml": "Welcome to my portfolio, I'm a French computer science student and here are some of my personal and professional projects. <br>Check my <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> for more details."
     },
     "nav": {
       "about": "About",
@@ -218,12 +223,16 @@
     },
     "about": {
       "title": "About",
-      "bioHtml": "I'm currently studying computer science at Université Paris-Saclay. My goal is to specialize in cybersecurity after joining an engineering school. Alongside my studies, I keep improving my web development skills, with a strong interest in modern technologies and building secure solutions. I also want to contribute to open-source projects in cybersecurity to gain more hands-on experience while giving back to the community.",
+      "bioHtml": "I'm currently an engineering student at EFREI, majoring in Networks and Security, with the goal of becoming a cybersecurity expert. Alongside my studies, I dedicate part of my free time to improving my full-stack development skills and deepening my knowledge of security tools. I also spend a large part of my free time on my second passion: music, particularly piano.",
       "educationTitle": "Education",
       "education": [
         {
           "icon": "fa-solid fa-graduation-cap",
-          "text": "2024 / 2026 - IUT Orsay, computer science university, English-speaking section"
+          "text": "2026 / 2029 - EFREI Paris, Networks and Security major, engineering cycle"
+        },
+        {
+          "icon": "fa-solid fa-graduation-cap",
+          "text": "2024 / 2026 - IUT Orsay, computer science university, Networks and Application Security specialization, English-speaking section"
         },
         {
           "icon": "fa-solid fa-graduation-cap",
@@ -246,13 +255,14 @@
     "skills": {
       "title": "Skills",
       "softSkills": "Teamwork, versatility, teaching mindset, adaptability",
-      "languagesHtml": "<i class=\"fab fa-html5\"></i> HTML, <i class=\"fab fa-js\"></i> JavaScript, <i class=\"fab fa-css3-alt\"></i> CSS, <i class=\"fab fa-python\"></i> Python, <i class=\"fab fa-cuttlefish\"></i> C#, <i class=\"fab fa-code\"></i> CamL, <i class=\"fab fa-cuttlefish\"></i> C++, <i class=\"fas fa-database\"></i> SQL",
+      "languagesHtml": "<i class=\"fab fa-html5\"></i> HTML, <i class=\"fab fa-js\"></i> JavaScript, <i class=\"fab fa-css3-alt\"></i> CSS, <i class=\"fab fa-python\"></i> Python, <i class=\"fab fa-cuttlefish\"></i> C#, <i class=\"fab fa-cuttlefish\"></i> C++, <i class=\"fas fa-database\"></i> SQL",
       "tools": "Application and website development, use of game engines and Git",
+      "cybersecurity": "Cybersecurity tools (Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall...)",
       "spoken": "English (C1), Spanish (A2), French (native)",
       "experienceTitle": "Experience",
       "experience": [
+        "2026 - Developed a social media app with Flutter and Firebase",
         "2023 - Built two websites for commercial companies",
-        "2023 - Developed and published an Android video game with a graphic designer",
         "2019 - 2024 - Produced two multiplayer games",
         "More details in the <a href=\"#work\">work section</a>"
       ]
@@ -356,15 +366,6 @@
             "Modern UI adapted to the film industry"
           ]
         },
-        "socialMedia": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/MessageApp\" target=\"_blank\" rel=\"noopener noreferrer\">Social Media</a> - 2025",
-          "descriptionHtml": "I'm building a social media app using React Native and Firebase. I already shipped messaging with contacts and more, and I'm working on a post system.",
-          "bullets": [
-            "React Native mobile development",
-            "Firebase for users and messaging",
-            "Designing a modern social UI"
-          ]
-        },
         "mediafinder": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a> - 2024",
           "descriptionHtml": "Mediafinder is a website created as part of a school project. The goal was to build a site for an association whose purpose is to bring people together to recover lost media.",
@@ -380,16 +381,24 @@
           ]
         },
         "maxiflop": {
-        "titleHtml": "<a href=\"https://github.com/Maxx-bl/maxiflop\" target=\"_blank\" rel=\"noopener noreferrer\">Maxiflop</a> - 2026",
-        "descriptionHtml": "Maxiflop is a multiplayer rhythm game similar to piano tiles, in the style of Kahoot on a shared screen.",
-        "bullets": [
-          "Development of a video game using Godot4 & GDScript",
-          "Multiplayer rhythm game",
-          "Client/server management (players' phones)",
-          "Team project (3 people)"
-        ]
-      }
-
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/maxiflop\" target=\"_blank\" rel=\"noopener noreferrer\">Maxiflop</a> - 2026",
+          "descriptionHtml": "Maxiflop is a multiplayer rhythm game similar to piano tiles, in the style of Kahoot on a shared screen.",
+          "bullets": [
+            "Game development with Godot 4 & GDScript",
+            "Multiplayer rhythm game",
+            "Client/server management (players' phones)",
+            "Team project (3 people)"
+          ]
+        },
+        "asiimov": {
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Asiimov\" target=\"_blank\" rel=\"noopener noreferrer\">Asiimov</a> - 2025/2026",
+          "descriptionHtml": "I completed my ambitious social media project! Using Flutter and Firebase, I built a fully functional messaging system as well as a post feed based on who you follow.",
+          "bullets": [
+            "Mobile app development with Flutter (Dart)",
+            "Firebase for user management and messaging",
+            "Designing a modern social media UI"
+          ]
+        }
       }
     },
     "footer": {
@@ -401,4 +410,3 @@
     }
   }
 }
-

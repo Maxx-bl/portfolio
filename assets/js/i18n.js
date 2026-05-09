@@ -114,6 +114,7 @@
     setText(document.querySelector('[data-i18n="skills.softSkills"]'), t.skills?.softSkills || '');
     setHtml(document.querySelector('[data-i18n="skills.languages"]'), t.skills?.languagesHtml || '');
     setText(document.querySelector('[data-i18n="skills.tools"]'), t.skills?.tools || '');
+    setText(document.querySelector('[data-i18n="skills.cybersecurity"]'), t.skills?.cybersecurity || '');
     setText(document.querySelector('[data-i18n="skills.spoken"]'), t.skills?.spoken || '');
     setText(document.querySelector('[data-i18n="skills.experienceTitle"]'), t.skills?.experienceTitle || '');
     renderSimpleList(document.querySelector('#experience-list'), t.skills?.experience || []);
