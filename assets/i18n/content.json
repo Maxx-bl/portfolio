@@ -187,9 +187,9 @@
         },
         "asiimov": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Asiimov\" target=\"_blank\" rel=\"noopener noreferrer\">Asiimov</a> - 2025/2026",
-          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie fonctionnel, ainsi que des publications en fonction des personnes que l'on suit.",
+          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie fonctionnel, ainsi que des publications en fonction des personnes que l'on suit. <a href=\"https://maxx-bl.github.io/Asiimov/\" target=\"_blank\" rel=\"noopener noreferrer\">Testez l'application web juste ici !</a>",
           "bullets": [
-            "Développement d'une application mobile avec Flutter (Dart)",
+            "Développement d'une application mobile/web avec Flutter (Dart)",
             "Utilisation de Firebase pour la gestion des utilisateurs et des messages",
             "Conception d'une interface utilisateur pour un réseau social moderne"
           ]
@@ -392,9 +392,9 @@
         },
         "asiimov": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Asiimov\" target=\"_blank\" rel=\"noopener noreferrer\">Asiimov</a> - 2025/2026",
-          "descriptionHtml": "I completed my ambitious social media project! Using Flutter and Firebase, I built a fully functional messaging system as well as a post feed based on who you follow.",
+          "descriptionHtml": "I completed my ambitious social media project! Using Flutter and Firebase, I built a fully functional messaging system as well as a post feed based on who you follow. <a href=\"https://maxx-bl.github.io/Asiimov/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the web app here!</a>",
           "bullets": [
-            "Mobile app development with Flutter (Dart)",
+            "Mobile/web app development with Flutter (Dart)",
             "Firebase for user management and messaging",
             "Designing a modern social media UI"
           ]
