@@ -8,7 +8,7 @@
         "afternoon": "&#x26C5; Bonjour !",
         "evening": "&#x1F319; Bonsoir !"
       },
-      "introHtml": "Bienvenue sur mon portfolio, je suis étudiant en informatique et voici mes projets personnels et professionnels. <br>Voici mon <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> pour plus d'informations."
+      "introHtml": "Bienvenue sur mon portfolio.<br>Je suis étudiant en informatique et voici mes projets personnels et professionnels. <br>Voici mon <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> pour plus d'informations."
     },
     "nav": {
       "about": "A propos",
@@ -213,7 +213,7 @@
         "afternoon": "&#x26C5; Good afternoon!",
         "evening": "&#x1F319; Good evening!"
       },
-      "introHtml": "Welcome to my portfolio, I'm a French computer science student and here are some of my personal and professional projects. <br>Check my <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> for more details."
+      "introHtml": "Welcome to my portfolio.<br>I'm a French IT student and here are some of my personal and professional projects. <br>Check my <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> for more details."
     },
     "nav": {
       "about": "About",
