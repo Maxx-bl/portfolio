@@ -64,7 +64,7 @@
     },
     "contact": {
       "title": "Contact",
-      "bodyHtml": "N'hésitez pas à me contacter :<br><span class=\"fa-solid fa-phone\"></span> (+33) 07 68 66 90 10<br><span class=\"fa-solid fa-envelope\"></span> bl.maxandre@gmail.com",
+      "bodyHtml": "N'hésitez pas à me contacter :<br><span class=\"fa-solid fa-envelope\"></span> maxandre@synae.dev",
       "spokenLabel": "Langues parlées :"
     },
     "work": {
@@ -269,7 +269,7 @@
     },
     "contact": {
       "title": "Contact",
-      "bodyHtml": "Feel free to contact me:<br><span class=\"fa-solid fa-phone\"></span> (+33) 07 68 66 90 10<br><span class=\"fa-solid fa-envelope\"></span> bl.maxandre@gmail.com",
+      "bodyHtml": "Feel free to contact me:<br><span class=\"fa-solid fa-envelope\"></span> maxandre@synae.dev",
       "spokenLabel": "Spoken languages:"
     },
     "work": {
