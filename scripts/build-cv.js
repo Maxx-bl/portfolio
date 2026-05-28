@@ -86,7 +86,7 @@ const educationEntries = d.education.entries.map(e => {
 const tex = `\\documentclass[10pt,a4paper]{article}
 
 \\usepackage{fontspec}
-\\setmainfont{Public Sans}[
+\\setmainfont{PublicSans-Regular}[
   Path           = ./fonts/,
   Extension      = .ttf,
   BoldFont       = PublicSans-Bold,
@@ -139,8 +139,8 @@ const tex = `\\documentclass[10pt,a4paper]{article}
 \\begin{minipage}[t]{0.18\\linewidth}
   \\vspace{0pt}
   \\begin{tikzpicture}
-    \\draw[fill=lightgray!40, draw=lightgray] (0,0) circle (1.5cm);
-    \\node at (0,0) {\\small Photo};
+    \\clip (0,0) circle (1.5cm);
+    \\node at (0,0) {\\includegraphics[width=3cm]{./photo.jpg}};
   \\end{tikzpicture}
 \\end{minipage}%
 \\hfill
