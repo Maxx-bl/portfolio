@@ -85,12 +85,10 @@ const educationEntries = d.education.entries.map(e => {
 // ── LaTeX document ────────────────────────────────────────────────────────
 const tex = `\\documentclass[10pt,a4paper]{article}
 
-\\usepackage{fontspec}
-\\setmainfont{TeX Gyre Heros}[
-  BoldFont       = {TeX Gyre Heros Bold},
-  ItalicFont     = {TeX Gyre Heros Italic},
-  BoldItalicFont = {TeX Gyre Heros Bold Italic}
-]
+\\usepackage[T1]{fontenc}
+\\usepackage[utf8]{inputenc}
+\\usepackage{helvet}
+\\renewcommand{\\familydefault}{\\sfdefault}
 
 \\usepackage{geometry}
 \\usepackage{xcolor}
@@ -213,7 +211,7 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 
 try {
   execSync(
-    `xelatex -interaction=nonstopmode -output-directory="${__dirname}" "${OUT_TEX}"`,
+    `pdflatex -interaction=nonstopmode -output-directory="${__dirname}" "${OUT_TEX}"`,
     { stdio: 'inherit', cwd: __dirname }
   );
 

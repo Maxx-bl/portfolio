@@ -24,15 +24,16 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install XeLaTeX
+      - name: Install pdfLaTeX
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends \
-            texlive-xetex \
+            texlive-latex-base \
             texlive-latex-extra \
             texlive-latex-recommended \
             texlive-fonts-recommended \
-            texlive-pictures
+            texlive-pictures \
+            texlive-lang-french
 
       - name: Build PDF
         run: node scripts/build-cv.js
