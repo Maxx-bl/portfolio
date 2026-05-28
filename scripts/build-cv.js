@@ -2,7 +2,7 @@
 /**
  * build-cv.js
  * Reads content.json (FR), generates a LaTeX .tex file, compiles it with
- * XeLaTeX, and outputs assets/files/cv-maxandre.pdf.
+ * pdfLaTeX, and outputs assets/files/cv-maxandre.pdf.
  *
  * Usage:  node scripts/build-cv.js
  *
