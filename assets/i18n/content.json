@@ -87,7 +87,7 @@
       ],
       "hobbiesLabel": "Loisirs",
       "hobbies": [
-        { "label": "Musique", "description": "Piano (classique, pop, indé) depuis 2012, Composition (FL Studio)" },
+        { "label": "Musique", "description": "Piano (classique, pop, indé) depuis 2012" },
         { "label": "Sport",   "description": "Callisthénie" }
       ]
     },

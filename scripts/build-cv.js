@@ -157,7 +157,7 @@ ${esc(d.contact.phone)}\\\\
 ${esc(d.contact.address)}\\\\
 ${esc(d.contact.permisB)}\\\\
 \\href{https://www.linkedin.com/in/maxandre-bl/}{linkedin.com/in/maxandre-bl/}\\\\[4pt]
-\\textbf{Portfolio} : \\href{https://maxx-bl.github.io/}{maxx-bl.github.io/}
+\\textbf{Portfolio} : \\href{https://portfolio.synae.dev/}{portfolio.synae.dev/}
 
 \\vspace{2pt}
 \\color{lightgray}\\rule{\\linewidth}{0.4pt}
