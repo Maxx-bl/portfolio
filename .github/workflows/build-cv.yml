@@ -33,14 +33,15 @@ jobs:
             texlive-latex-recommended \
             texlive-pictures
 
-      - name: Download Public Sans fonts
+      - name: Install Public Sans fonts
         run: |
-          mkdir -p scripts/fonts
+          sudo mkdir -p /usr/local/share/fonts/publicsans
           BASE="https://github.com/uswds/public-sans/raw/master/fonts/ttf"
-          curl -sL "$BASE/PublicSans-Regular.ttf"    -o scripts/fonts/PublicSans-Regular.ttf
-          curl -sL "$BASE/PublicSans-Bold.ttf"       -o scripts/fonts/PublicSans-Bold.ttf
-          curl -sL "$BASE/PublicSans-Italic.ttf"     -o scripts/fonts/PublicSans-Italic.ttf
-          curl -sL "$BASE/PublicSans-BoldItalic.ttf" -o scripts/fonts/PublicSans-BoldItalic.ttf
+          sudo curl -sL "$BASE/PublicSans-Regular.ttf"    -o /usr/local/share/fonts/publicsans/PublicSans-Regular.ttf
+          sudo curl -sL "$BASE/PublicSans-Bold.ttf"       -o /usr/local/share/fonts/publicsans/PublicSans-Bold.ttf
+          sudo curl -sL "$BASE/PublicSans-Italic.ttf"     -o /usr/local/share/fonts/publicsans/PublicSans-Italic.ttf
+          sudo curl -sL "$BASE/PublicSans-BoldItalic.ttf" -o /usr/local/share/fonts/publicsans/PublicSans-BoldItalic.ttf
+          sudo fc-cache -f
 
       - name: Build PDF
         run: node scripts/build-cv.js

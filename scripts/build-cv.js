@@ -87,8 +87,6 @@ const tex = `\\documentclass[10pt,a4paper]{article}
 
 \\usepackage{fontspec}
 \\setmainfont{PublicSans-Regular}[
-  Path           = ./fonts/,
-  Extension      = .ttf,
   BoldFont       = PublicSans-Bold,
   ItalicFont     = PublicSans-Italic,
   BoldItalicFont = PublicSans-BoldItalic
