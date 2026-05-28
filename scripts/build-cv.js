@@ -86,10 +86,10 @@ const educationEntries = d.education.entries.map(e => {
 const tex = `\\documentclass[10pt,a4paper]{article}
 
 \\usepackage{fontspec}
-\\setmainfont{PublicSans-Regular}[
-  BoldFont       = PublicSans-Bold,
-  ItalicFont     = PublicSans-Italic,
-  BoldItalicFont = PublicSans-BoldItalic
+\\setmainfont{TeX Gyre Heros}[
+  BoldFont       = {TeX Gyre Heros Bold},
+  ItalicFont     = {TeX Gyre Heros Italic},
+  BoldItalicFont = {TeX Gyre Heros Bold Italic}
 ]
 
 \\usepackage{geometry}
