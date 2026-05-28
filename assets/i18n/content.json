@@ -3,75 +3,161 @@
     "siteTitle": "Maxandre",
     "header": {
       "name": "Maxandre",
+      "tagline": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1sem/1sem). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
       "greeting": {
-        "morning": "&#x1f305; Bonjour !",
-        "afternoon": "&#x26C5; Bonjour !",
-        "evening": "&#x1F319; Bonsoir !"
-      },
-      "introHtml": "Bienvenue sur mon portfolio.<br>Je suis étudiant en informatique et voici mes projets personnels et professionnels. <br>Voici mon <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> pour plus d'informations."
+        "morning": "Bonjour !",
+        "afternoon": "Bonjour !",
+        "evening": "Bonsoir !"
+      }
     },
     "nav": {
+      "home": "Accueil",
       "about": "A propos",
-      "skills": "Savoir",
+      "skills": "Compétences",
+      "experience": "Expérience",
+      "projects": "Projets",
+      "education": "Formation",
       "work": "Projets",
       "contact": "Contact"
     },
+    "home": {
+      "cvButtonLabel": "Télécharger mon CV"
+    },
     "about": {
       "title": "A propos",
-      "bioHtml": "Actuellement étudiant ingénieur à l'EFREI en majeure Réseaux et Sécurité, je souhaite devenir expert en cybersécurité. En parallèle, je consacre une partie de mon temps libre à perfectionner mes compétences en développement full-stack ainsi que mes connaissances des outils de sécurité. Je passe également la majeure partie de mon temps libre à me consacrer à ma deuxième passion : la musique, particulièrement le piano.",
-      "educationTitle": "Parcours",
-      "education": [
-        { 
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2026 / 2029 - EFREI Paris, majeure Réseaux et Sécurité, cycle ingénieur"
-        },
-        { 
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2024 / 2026 - IUT d'Orsay, obtention d'un DUT informatique spécialité réseaux et sécurité des applications, section anglophone"
+      "bioHtml": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1sem/1sem). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
+      "educationTitle": "Parcours"
+    },
+    "education": {
+      "title": "Formation",
+      "entries": [
+        {
+          "period": "2026 / 2029",
+          "institution": "EFREI",
+          "degree": "Majeure réseaux & sécurité",
+          "description": "Cycle ingénieur, majeure réseaux & sécurité."
         },
         {
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2023 / 2024 - EPITA, un an de programme préparatoire intégré"
+          "period": "2024 / 2026",
+          "institution": "IUT d'Orsay",
+          "degree": "DUT Informatique",
+          "description": "Section anglophone, spécialité cybersécurité & réseaux, option mathématiques ingénieur."
         },
         {
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2020 / 2023 - Lycée, spécialité mathématiques et informatique"
+          "period": "2023 / 2024",
+          "institution": "EPITA",
+          "degree": "Prépa intégrée",
+          "description": "Première année de programme préparatoire intégré."
         },
         {
-          "icon": "fa-solid fa-briefcase",
-          "text": "2019 / 2022 - 3 stages en développement web"
+          "period": "2020 / 2023",
+          "institution": "Lycée Institution du Sacré-Cœur / Essouriau",
+          "degree": "Baccalauréat général",
+          "description": "Mention bien, spécialités Mathématiques et NSI."
         },
         {
-          "icon": "fa-solid fa-heart-pulse",
-          "text": "2019 - Obtention du certificat PSC1 de premiers secours"
+          "period": "2020",
+          "institution": "Secourisme",
+          "degree": "PSC1",
+          "description": "Obtention du brevet de secourisme PSC1."
         }
       ]
     },
     "skills": {
       "title": "Compétences",
-      "softSkills": "Travail en équipe, polyvalence, pédagogie, adaptabilité",
-      "languagesHtml": "<i class=\"fab fa-html5\"></i> HTML, <i class=\"fab fa-js\"></i> JavaScript, <i class=\"fab fa-css3-alt\"></i> CSS, <i class=\"fab fa-python\"></i> Python, <i class=\"fab fa-cuttlefish\"></i> C#, <i class=\"fab fa-cuttlefish\"></i> C++, <i class=\"fas fa-database\"></i> SQL",
-      "tools": "Développement d'applications et de sites web, utilisation de moteurs graphiques, GIT",
-      "cybersecurity": "Outils de cybersécurité (Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall...)",
-      "spoken": "Anglais (C1), Espagnol (A2), Français (langue natale)",
-      "experienceTitle": "Expérience",
-      "experience": [
-        "2026 - Développement d'un réseau social avec Flutter et Firebase",
-        "2023 - Création de deux sites web pour des entreprises commerciales",
-        "2019 - 2024 - Production de deux jeux multijoueurs",
-        "Plus d'informations sur mes projets dans la <a href=\"#work\">page de travaux</a>"
+      "technicalGroups": [
+        { "label": "Développement web",      "items": "JavaScript, HTML, CSS, PHP" },
+        { "label": "Développement logiciel", "items": "Python, Java, C#, C++, C" },
+        { "label": "Base de données",        "items": "SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo" },
+        { "label": "Outils",                 "items": "Flutter, React Native, Unity, Godot, Docker" },
+        { "label": "GIT",                    "items": "GitHub, GitLab, Bash + GUI" },
+        { "label": "Sécurité & Réseaux",     "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" }
+      ],
+      "qualitiesLabel": "Qualités",
+      "qualities": [
+        { "label": "Travail d'équipe", "description": "Collaboration avec graphistes et développeurs" },
+        { "label": "Polyvalence",      "description": "Web, Logiciel, Mobile" },
+        { "label": "Pédagogie",        "description": "Cours particuliers à domicile et distanciel" },
+        { "label": "Adaptation",       "description": "Apprentissage rapide de technologies / frameworks" }
+      ],
+      "spokenLabel": "Langues",
+      "spoken": [
+        { "label": "Français", "description": "langue maternelle" },
+        { "label": "Anglais",  "description": "niveau C1" }
+      ],
+      "hobbiesLabel": "Loisirs",
+      "hobbies": [
+        { "label": "Musique", "description": "Piano (classique, pop, indé) depuis 2012, Composition (FL Studio)" },
+        { "label": "Sport",   "description": "Callisthénie" }
+      ]
+    },
+    "experience": {
+      "title": "Expérience",
+      "entries": [
+        {
+          "period": "2026",
+          "role": "Développeur C#",
+          "company": "Simutech uae",
+          "descriptionHtml": "Développement & conception d'une application de post traitement de données/mesures (tests API, analyse de flux).",
+          "bullets": ["C#", "Tests API", "Analyse de flux de données"]
+        },
+        {
+          "period": "2025 / 2026",
+          "role": "Tuteur",
+          "company": "IUT Paris-Saclay",
+          "descriptionHtml": "Cours de soutien en C++ et système Linux aux élèves de première année.",
+          "bullets": ["C++", "Linux", "Enseignement"]
+        },
+        {
+          "period": "2024 / 2026",
+          "role": "Enseignant particulier",
+          "company": "À domicile / distanciel",
+          "descriptionHtml": "Soutien scolaire en Mathématiques, Informatique (élèves lycée), aide aux devoirs / babysitting (élèves primaire).",
+          "bullets": ["Mathématiques", "Informatique", "Pédagogie"]
+        }
       ]
     },
     "contact": {
       "title": "Contact",
-      "bodyHtml": "N'hésitez pas à me contacter :<br><span class=\"fa-solid fa-envelope\"></span> maxandre@synae.dev",
+      "email": "maxandre@synae.dev",
+      "phone": "(+33) 07 68 66 90 10",
+      "address": "Marcoussis (91460)",
+      "permisB": "Permis B",
       "spokenLabel": "Langues parlées :"
     },
     "work": {
       "title": "Projets",
+      "cvProjects": {
+        "glyphe_cv": {
+          "title": "Réseau social « Glyphe »",
+          "year": "2025 / 2026",
+          "description": "Développement d'une application mobile avec Flutter, communicante avec une base de données Firebase. Système de messagerie, followers et de posts."
+        },
+        "gameJam": {
+          "title": "Code Game Jam IUT Montpellier-Sète",
+          "year": "2025 et 2026",
+          "description": "Conception de jeux vidéo (équipe de 6 personnes, 30h) sur Godot. Jeu de rythme musical en C# (2025) et clicker game en GDScript (2026)."
+        },
+        "ethix": {
+          "title": "Site internet Ethix IT et Ethix Marine",
+          "year": "2023",
+          "description": "Création de sites internet pour deux sociétés commerciales, en utilisant HTML, CSS et JavaScript."
+        },
+        "rockingball": {
+          "title": "Jeu vidéo mobile « RockingBall »",
+          "year": "2023 / 2024",
+          "description": "Développement sur Godot (C#) et publication d'un jeu vidéo sur Android, réalisé en collaboration avec un graphiste."
+        },
+        "spaceysolanum": {
+          "title": "Jeux multijoueurs « SpaceY » et « Solanum RPG »",
+          "year": "2022 / 2024",
+          "description": "Conception de deux jeux multijoueurs, Godot et utilisation de l'API discord.js et node.js."
+        }
+      },
       "projects": {
         "rockingball": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a> - 2023",
+          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a>",
+          "year": "2023",
           "descriptionHtml": "Mon premier projet de jeu vidéo. RockingBall est un jeu simple disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a>. Un designer graphique et moi l'avons publié sous le nom de <a href=\"https://discord.com/invite/DhqmCnzKmz\" target=\"_blank\" rel=\"noopener noreferrer\">Wyvern Studio</a>. <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">Le jeu est gratuit.</a>",
           "bullets": [
             "Gestion du développement de jeux vidéo mobile",
@@ -81,7 +167,8 @@
           ]
         },
         "ethixmarine": {
-          "titleHtml": "<a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix Marine</a> - 2024",
+          "titleHtml": "<a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix Marine</a>",
+          "year": "2024",
           "descriptionHtml": "J'ai créé un site web pour une entreprise de réparation et de maintenance de bateaux. Le projet est terminé, mais je garde le site sur mon github. <a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
           "bullets": [
             "Développement web avec HTML, CSS, et JavaScript",
@@ -90,7 +177,8 @@
           ]
         },
         "ethixit": {
-          "titleHtml": "<a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a> - 2023",
+          "titleHtml": "<a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
+          "year": "2023",
           "descriptionHtml": "J'ai remasterisé un site web pour une entreprise de conseil en informatique. <a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
           "bullets": [
             "Amélioration de l'expérience utilisateur (UX)",
@@ -100,7 +188,8 @@
           ]
         },
         "spacey": {
-          "titleHtml": "<a href=\"https://spacey-epitchad.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Space Y</a> - 2024",
+          "titleHtml": "<a href=\"https://spacey-epitchad.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Space Y</a>",
+          "year": "2024",
           "descriptionHtml": "Il s'agit d'un jeu multijoueur 2D. Avec une équipe de 5 amis, nous avons créé ce jeu appelé SpaceY. C'est un projet scolaire. Nous avons entièrement créé ce projet, des spécifications techniques au jeu lui-même, en passant par la communication, la direction artistique, et plus encore. Il s'agit d'une course entre 2 équipes dans l'espace. Téléchargez le dépôt <a href=\"https://github.com/Maxx-bl/SpaceY\" target=\"_blank\" rel=\"noopener noreferrer\">ici</a>.",
           "bullets": [
             "Développement d'un jeu multijoueur en équipe",
@@ -110,7 +199,8 @@
           ]
         },
         "portfolio": {
-          "titleHtml": "Mon site web - 2024",
+          "titleHtml": "Mon site web",
+          "year": "2024",
           "descriptionHtml": "J'ai créé mon site de portfolio, vous y êtes actuellement.",
           "bullets": [
             "Développement de site personnel avec HTML, CSS et JavaScript",
@@ -118,7 +208,8 @@
           ]
         },
         "solanum": {
-          "titleHtml": "<a href=\"https://discord.gg/NapeBeSAdd\" target=\"_blank\" rel=\"noopener noreferrer\">Solanum RPG</a> - 2021/2024",
+          "titleHtml": "<a href=\"https://discord.gg/NapeBeSAdd\" target=\"_blank\" rel=\"noopener noreferrer\">Solanum RPG</a>",
+          "year": "2021/2024",
           "descriptionHtml": "En collaboration avec un designer graphique, nous créons un RPG multijoueur utilisant l'API Discord. Solanum est un jeu RPG qui se joue sur Discord, via un bot.",
           "bullets": [
             "Développement d'un RPG multijoueur utilisant l'API Discord",
@@ -127,7 +218,8 @@
           ]
         },
         "weatherapp": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/WeatherApp\" target=\"_blank\" rel=\"noopener noreferrer\">WeatherApp</a> - 2024",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/WeatherApp\" target=\"_blank\" rel=\"noopener noreferrer\">WeatherApp</a>",
+          "year": "2024",
           "descriptionHtml": "Une application météo simple avec un design moderne qui envoie une requête à l'API de <a href=\"https://openweathermap.org/\" target=\"_blank\" rel=\"noopener noreferrer\">openweathermap.org</a>. Ce projet est réalisé avec Flutter (Dart). Consultez mon <a href=\"https://github.com/Maxx-bl/WeatherApp\" target=\"_blank\" rel=\"noopener noreferrer\">dépôt GitHub</a> pour plus d'informations sur ce projet !",
           "bullets": [
             "Développement d'application mobile avec Flutter et Dart",
@@ -136,7 +228,8 @@
           ]
         },
         "mininote": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a> - 2024",
+          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a>",
+          "year": "2024",
           "descriptionHtml": "Une application de prise de notes simple avec un design moderne pour prendre des notes et écrire vos tâches quotidiennes. Disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a> !<br>Ce projet est réalisé avec Flutter (Dart). Consultez mon <a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">dépôt GitHub</a> pour plus d'informations sur ce projet !",
           "bullets": [
             "Développement d'application mobile avec Flutter et Dart",
@@ -145,7 +238,8 @@
           ]
         },
         "moh": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/code-game-jam-2025\" target=\"_blank\" rel=\"noopener noreferrer\">Music Of Honor (Code Game Jam)</a> - 2025",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/code-game-jam-2025\" target=\"_blank\" rel=\"noopener noreferrer\">Music Of Honor (Code Game Jam)</a>",
+          "year": "2025",
           "descriptionHtml": "Music Of Honor est un jeu vidéo réalisé avec Godot4 (C#) en moins de 30 heures lors du Code Game Jam, 9e édition, en janvier 2025. Le thème du jam était \"Melody to the Infinite\" (Mélodie à l'infini en français). Le jeu consiste en une note musicale contrôlée par le joueur, qui doit éviter les ennemis, récupérer des power-ups et augmenter son score en survivant. Le thème musical, la vitesse du jeu, et les animations deviennent progressivement de plus en plus rapides. <a href=\"https://xeradse.itch.io/music-of-honor\" target=\"_blank\" rel=\"noopener noreferrer\">Téléchargez le jeu sur itch.io !</a>",
           "bullets": [
             "Développement d'un jeu vidéo en C# avec Godot4",
@@ -154,7 +248,8 @@
           ]
         },
         "portfolioLea": {
-          "titleHtml": "<a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio - Léa Pelletier</a> - 2025",
+          "titleHtml": "<a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio - Léa Pelletier</a>",
+          "year": "2025",
           "descriptionHtml": "J'ai créé un site portfolio pour une cliente. Elle travaille dans le cinéma et l'audiovisuel. <a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le maintenant !</a>",
           "bullets": [
             "Développement de sites web responsives avec HTML, CSS, et JavaScript",
@@ -162,12 +257,14 @@
           ]
         },
         "mediafinder": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a> - 2024",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a>",
+          "year": "2024",
           "descriptionHtml": "Mediafinder est un site web créé dans le cadre d'un projet scolaire. L'objectif était de construire un site pour une association dont le but est de rassembler des personnes afin de retrouver des médias perdus.",
           "bullets": []
         },
         "beerfinity": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cgj-fete-des-clics\" target=\"_blank\" rel=\"noopener noreferrer\">BeerFinity (Code Game Jam)</a> - 2026",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cgj-fete-des-clics\" target=\"_blank\" rel=\"noopener noreferrer\">BeerFinity (Code Game Jam)</a>",
+          "year": "2026",
           "descriptionHtml": "BeerFinity est un clicker réalisé avec Godot4 et GDScript en moins de 30 heures lors du Code Game Jam, 10e édition, en janvier 2026. Le thème du jam était \"Click Party\" (Fête des clics). Le joueur clique sur une bière pour gagner de l'argent, puis achète des améliorations pour gagner encore plus. <a href=\"https://maxx-bl.itch.io/beerfinity\" target=\"_blank\" rel=\"noopener noreferrer\">Télécharger le jeu sur itch.io !</a>",
           "bullets": [
             "Développement rapide en game jam (moins de 30 heures)",
@@ -176,7 +273,8 @@
           ]
         },
         "maxiflop": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/maxiflop\" target=\"_blank\" rel=\"noopener noreferrer\">Maxiflop</a> - 2026",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/maxiflop\" target=\"_blank\" rel=\"noopener noreferrer\">Maxiflop</a>",
+          "year": "2026",
           "descriptionHtml": "Maxiflop est un jeu de rythme multijoueur type piano tiles à la façon d'un Kahoot sur un écran commun.",
           "bullets": [
             "Développement d'un jeu vidéo avec Godot4 & GDScript",
@@ -186,7 +284,8 @@
           ]
         },
         "glyphe": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Asiimov\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a> - 2025/2026",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Glyphe\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a>",
+          "year": "2025/2026",
           "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie fonctionnel, ainsi que des publications en fonction des personnes que l'on suit. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Testez l'application web juste ici !</a>",
           "bullets": [
             "Développement d'une application mobile/web avec Flutter (Dart)",
@@ -197,7 +296,7 @@
       }
     },
     "footer": {
-      "copyright": "&copy; By Maxandre"
+      "copyright": "&copy; Maxandre"
     },
     "ui": {
       "close": "Fermer",
@@ -208,75 +307,161 @@
     "siteTitle": "Maxandre",
     "header": {
       "name": "Maxandre",
+      "tagline": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 semester/1 semester). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
       "greeting": {
-        "morning": "&#x1f305; Good morning!",
-        "afternoon": "&#x26C5; Good afternoon!",
-        "evening": "&#x1F319; Good evening!"
-      },
-      "introHtml": "Welcome to my portfolio.<br>I'm a French IT student and here are some of my personal and professional projects. <br>Check my <a href=\"https://github.com/Maxx-bl\" target=\"_blank\" rel=\"noopener noreferrer\">github</a> for more details."
+        "morning": "Good morning!",
+        "afternoon": "Good afternoon!",
+        "evening": "Good evening!"
+      }
     },
     "nav": {
+      "home": "Home",
       "about": "About",
       "skills": "Skills",
-      "work": "Work",
+      "experience": "Experience",
+      "projects": "Projects",
+      "education": "Education",
+      "work": "Projects",
       "contact": "Contact"
+    },
+    "home": {
+      "cvButtonLabel": "Download my resume"
     },
     "about": {
       "title": "About",
-      "bioHtml": "I'm currently an engineering student at EFREI, majoring in Networks and Security, with the goal of becoming a cybersecurity expert. Alongside my studies, I dedicate part of my free time to improving my full-stack development skills and deepening my knowledge of security tools. I also spend a large part of my free time on my second passion: music, particularly piano.",
-      "educationTitle": "Education",
-      "education": [
+      "bioHtml": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 semester / 1 semester). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
+      "educationTitle": "Education"
+    },
+    "education": {
+      "title": "Education",
+      "entries": [
         {
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2026 / 2029 - EFREI Paris, Networks and Security major, engineering cycle"
+          "period": "2026 / 2029",
+          "institution": "EFREI",
+          "degree": "Networks & Security major",
+          "description": "Engineering cycle, Networks & Security major."
         },
         {
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2024 / 2026 - IUT Orsay, computer science university, Networks and Application Security specialization, English-speaking section"
+          "period": "2024 / 2026",
+          "institution": "IUT d'Orsay",
+          "degree": "Computer Science DUT",
+          "description": "English-speaking section, specialization in cybersecurity & networks, engineering mathematics option."
         },
         {
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2023 / 2024 - EPITA, one year of integrated preparatory program"
+          "period": "2023 / 2024",
+          "institution": "EPITA",
+          "degree": "Integrated preparatory program",
+          "description": "First year of integrated preparatory program."
         },
         {
-          "icon": "fa-solid fa-graduation-cap",
-          "text": "2020 / 2023 - High school, specializing in mathematics and computer science"
+          "period": "2020 / 2023",
+          "institution": "Lycée Institution du Sacré-Cœur / Essouriau",
+          "degree": "General baccalaureate",
+          "description": "With honours, specializing in Mathematics and Computer Science (NSI)."
         },
         {
-          "icon": "fa-solid fa-briefcase",
-          "text": "2019 / 2022 - Three one-week web development internships"
-        },
-        {
-          "icon": "fa-solid fa-heart-pulse",
-          "text": "2019 - PSC1 first-aid certificate"
+          "period": "2020",
+          "institution": "First Aid",
+          "degree": "PSC1 Certificate",
+          "description": "Obtained the PSC1 first aid certificate."
         }
       ]
     },
     "skills": {
       "title": "Skills",
-      "softSkills": "Teamwork, versatility, teaching mindset, adaptability",
-      "languagesHtml": "<i class=\"fab fa-html5\"></i> HTML, <i class=\"fab fa-js\"></i> JavaScript, <i class=\"fab fa-css3-alt\"></i> CSS, <i class=\"fab fa-python\"></i> Python, <i class=\"fab fa-cuttlefish\"></i> C#, <i class=\"fab fa-cuttlefish\"></i> C++, <i class=\"fas fa-database\"></i> SQL",
-      "tools": "Application and website development, use of game engines and Git",
-      "cybersecurity": "Cybersecurity tools (Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall...)",
-      "spoken": "English (C1), Spanish (A2), French (native)",
-      "experienceTitle": "Experience",
-      "experience": [
-        "2026 - Developed a social media app with Flutter and Firebase",
-        "2023 - Built two websites for commercial companies",
-        "2019 - 2024 - Produced two multiplayer games",
-        "More details in the <a href=\"#work\">work section</a>"
+      "technicalGroups": [
+        { "label": "Web development",      "items": "JavaScript, HTML, CSS, PHP" },
+        { "label": "Software development", "items": "Python, Java, C#, C++, C" },
+        { "label": "Databases",            "items": "SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo" },
+        { "label": "Tools",                "items": "Flutter, React Native, Unity, Godot, Docker" },
+        { "label": "GIT",                  "items": "GitHub, GitLab, Bash + GUI" },
+        { "label": "Security & Networks",  "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" }
+      ],
+      "qualitiesLabel": "Soft skills",
+      "qualities": [
+        { "label": "Teamwork",      "description": "Collaboration with designers and developers" },
+        { "label": "Versatility",   "description": "Web, Software, Mobile" },
+        { "label": "Teaching",      "description": "Private tutoring in person and remotely" },
+        { "label": "Adaptability",  "description": "Quick learner of new technologies / frameworks" }
+      ],
+      "spokenLabel": "Languages",
+      "spoken": [
+        { "label": "French",  "description": "native language" },
+        { "label": "English", "description": "C1 level" }
+      ],
+      "hobbiesLabel": "Hobbies",
+      "hobbies": [
+        { "label": "Music",  "description": "Piano (classical, pop, indie) since 2012, Composition (FL Studio)" },
+        { "label": "Sport",  "description": "Calisthenics" }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "entries": [
+        {
+          "period": "2026",
+          "role": "C# Developer",
+          "company": "Simutech uae",
+          "descriptionHtml": "Development & design of a data/measurement post-processing application (API testing, flow analysis).",
+          "bullets": ["C#", "API testing", "Data flow analysis"]
+        },
+        {
+          "period": "2025 / 2026",
+          "role": "Tutor",
+          "company": "IUT Paris-Saclay",
+          "descriptionHtml": "Support courses in C++ and Linux systems for first-year students.",
+          "bullets": ["C++", "Linux", "Teaching"]
+        },
+        {
+          "period": "2024 / 2026",
+          "role": "Private tutor",
+          "company": "In-person / remote",
+          "descriptionHtml": "Academic support in Mathematics and Computer Science (high school students), homework help / babysitting (primary school students).",
+          "bullets": ["Mathematics", "Computer Science", "Pedagogy"]
+        }
       ]
     },
     "contact": {
       "title": "Contact",
-      "bodyHtml": "Feel free to contact me:<br><span class=\"fa-solid fa-envelope\"></span> maxandre@synae.dev",
+      "email": "maxandre@synae.dev",
+      "phone": "(+33) 07 68 66 90 10",
+      "address": "Marcoussis (91460)",
+      "permisB": "Driver's license (B)",
       "spokenLabel": "Spoken languages:"
     },
     "work": {
-      "title": "Work",
+      "title": "Projects",
+      "cvProjects": {
+        "glyphe_cv": {
+          "title": "Social network « Glyphe »",
+          "year": "2025 / 2026",
+          "description": "Development of a mobile application with Flutter, connected to a Firebase database. Messaging system, followers and posts."
+        },
+        "gameJam": {
+          "title": "Code Game Jam IUT Montpellier-Sète",
+          "year": "2025 and 2026",
+          "description": "Video game design (team of 6, 30h) on Godot. Musical rhythm game in C# (2025) and clicker game in GDScript (2026)."
+        },
+        "ethix": {
+          "title": "Ethix IT and Ethix Marine websites",
+          "year": "2023",
+          "description": "Creation of websites for two commercial companies, using HTML, CSS and JavaScript."
+        },
+        "rockingball": {
+          "title": "Mobile game « RockingBall »",
+          "year": "2023 / 2024",
+          "description": "Development on Godot (C#) and publication of a video game on Android, made in collaboration with a graphic designer."
+        },
+        "spaceysolanum": {
+          "title": "Multiplayer games « SpaceY » and « Solanum RPG »",
+          "year": "2022 / 2024",
+          "description": "Design of two multiplayer games using Godot and the discord.js and node.js API."
+        }
+      },
       "projects": {
         "rockingball": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a> - 2023",
+          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a>",
+          "year": "2023",
           "descriptionHtml": "My first video game project. RockingBall is a simple game available on the <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a>. A graphic designer and I published it under <a href=\"https://discord.com/invite/DhqmCnzKmz\" target=\"_blank\" rel=\"noopener noreferrer\">Wyvern Studio</a>. <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">The game is free.</a>",
           "bullets": [
             "Mobile game development",
@@ -286,7 +471,8 @@
           ]
         },
         "ethixmarine": {
-          "titleHtml": "<a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix Marine</a> - 2024",
+          "titleHtml": "<a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix Marine</a>",
+          "year": "2024",
           "descriptionHtml": "I created a website for a boat repair and maintenance company. The project is finished, and I keep it on my GitHub. <a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Check it out here.</a>",
           "bullets": [
             "Web development with HTML, CSS, and JavaScript",
@@ -295,7 +481,8 @@
           ]
         },
         "ethixit": {
-          "titleHtml": "<a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a> - 2023",
+          "titleHtml": "<a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
+          "year": "2023",
           "descriptionHtml": "I remastered a website for an IT consulting company. <a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">See it here.</a>",
           "bullets": [
             "Improved user experience (UX)",
@@ -305,7 +492,8 @@
           ]
         },
         "spacey": {
-          "titleHtml": "<a href=\"https://spacey-epitchad.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Space Y</a> - 2024",
+          "titleHtml": "<a href=\"https://spacey-epitchad.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Space Y</a>",
+          "year": "2024",
           "descriptionHtml": "A 2D multiplayer game built with 5 friends as a school project. We covered technical specs, development, communication, art direction, and more. It's a race between two teams in space. Repository <a href=\"https://github.com/Maxx-bl/SpaceY\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.",
           "bullets": [
             "Team-based multiplayer game development",
@@ -315,7 +503,8 @@
           ]
         },
         "portfolio": {
-          "titleHtml": "My website - 2024",
+          "titleHtml": "My website",
+          "year": "2024",
           "descriptionHtml": "This portfolio website you are currently browsing.",
           "bullets": [
             "Personal website built with HTML, CSS and JavaScript",
@@ -323,7 +512,8 @@
           ]
         },
         "solanum": {
-          "titleHtml": "<a href=\"https://discord.gg/NapeBeSAdd\" target=\"_blank\" rel=\"noopener noreferrer\">Solanum RPG</a> - 2021/2024",
+          "titleHtml": "<a href=\"https://discord.gg/NapeBeSAdd\" target=\"_blank\" rel=\"noopener noreferrer\">Solanum RPG</a>",
+          "year": "2021/2024",
           "descriptionHtml": "With a graphic designer, we're building a multiplayer RPG using the Discord API. Solanum is played on Discord through a bot.",
           "bullets": [
             "Multiplayer RPG using Discord's API",
@@ -332,7 +522,8 @@
           ]
         },
         "weatherapp": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/WeatherApp\" target=\"_blank\" rel=\"noopener noreferrer\">WeatherApp</a> - 2024",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/WeatherApp\" target=\"_blank\" rel=\"noopener noreferrer\">WeatherApp</a>",
+          "year": "2024",
           "descriptionHtml": "A simple weather app that queries the <a href=\"https://openweathermap.org/\" target=\"_blank\" rel=\"noopener noreferrer\">OpenWeatherMap</a> API. Built with Flutter (Dart). Repo <a href=\"https://github.com/Maxx-bl/WeatherApp\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.",
           "bullets": [
             "Mobile development with Flutter and Dart",
@@ -341,7 +532,8 @@
           ]
         },
         "mininote": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a> - 2024",
+          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a>",
+          "year": "2024",
           "descriptionHtml": "A minimal note-taking app for notes and daily tasks. Available on the <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a>.<br>Built with Flutter (Dart). Repo <a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.",
           "bullets": [
             "Mobile development with Flutter and Dart",
@@ -350,7 +542,8 @@
           ]
         },
         "moh": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/code-game-jam-2025\" target=\"_blank\" rel=\"noopener noreferrer\">Music Of Honor (Code Game Jam)</a> - 2025",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/code-game-jam-2025\" target=\"_blank\" rel=\"noopener noreferrer\">Music Of Honor (Code Game Jam)</a>",
+          "year": "2025",
           "descriptionHtml": "A Godot 4 (C#) game built in under 30 hours during Code Game Jam (January 2025). Theme: \"Melody to the Infinite\". You control a musical note, dodge enemies, collect power-ups, and survive as the tempo ramps up. <a href=\"https://xeradse.itch.io/music-of-honor\" target=\"_blank\" rel=\"noopener noreferrer\">Download on itch.io</a>.",
           "bullets": [
             "Game development in C# with Godot 4",
@@ -359,7 +552,8 @@
           ]
         },
         "portfolioLea": {
-          "titleHtml": "<a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio - Léa Pelletier</a> - 2025",
+          "titleHtml": "<a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Portfolio - Léa Pelletier</a>",
+          "year": "2025",
           "descriptionHtml": "A portfolio website for a client working in film and audio-visual. <a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Visit it here</a>.",
           "bullets": [
             "Responsive websites with HTML, CSS, and JavaScript",
@@ -367,12 +561,14 @@
           ]
         },
         "mediafinder": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a> - 2024",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a>",
+          "year": "2024",
           "descriptionHtml": "Mediafinder is a website created as part of a school project. The goal was to build a site for an association whose purpose is to bring people together to recover lost media.",
           "bullets": []
         },
         "beerfinity": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cgj-fete-des-clics\" target=\"_blank\" rel=\"noopener noreferrer\">BeerFinity (Code Game Jam)</a> - 2026",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/cgj-fete-des-clics\" target=\"_blank\" rel=\"noopener noreferrer\">BeerFinity (Code Game Jam)</a>",
+          "year": "2026",
           "descriptionHtml": "BeerFinity is a clicker made with Godot 4 and GDScript in under 30 hours during Code Game Jam (January 2026, 10th edition). Theme: \"Click Party\". You click a beer to earn money, then buy upgrades to earn more. <a href=\"https://maxx-bl.itch.io/beerfinity\" target=\"_blank\" rel=\"noopener noreferrer\">Download on itch.io!</a>",
           "bullets": [
             "Rapid delivery in a game jam (under 30 hours)",
@@ -381,8 +577,9 @@
           ]
         },
         "maxiflop": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/maxiflop\" target=\"_blank\" rel=\"noopener noreferrer\">Maxiflop</a> - 2026",
-          "descriptionHtml": "Maxiflop is a multiplayer rhythm game similar to piano tiles, in the style of Kahoot on a shared screen.",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/maxiflop\" target=\"_blank\" rel=\"noopener noreferrer\">Maxiflop</a>",
+          "year": "2026",
+          "descriptionHtml": "Maxiflop is a multiplayer rhythm game similar to piano tiles, Kahoot-style on a shared screen.",
           "bullets": [
             "Game development with Godot 4 & GDScript",
             "Multiplayer rhythm game",
@@ -391,7 +588,8 @@
           ]
         },
         "glyphe": {
-          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Asiimov\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a> - 2025/2026",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Glyphe\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a>",
+          "year": "2025/2026",
           "descriptionHtml": "I completed my ambitious social media project! Using Flutter and Firebase, I built a fully functional messaging system as well as a post feed based on who you follow. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the web app here!</a>",
           "bullets": [
             "Mobile/web app development with Flutter (Dart)",
@@ -402,7 +600,7 @@
       }
     },
     "footer": {
-      "copyright": "&copy; By Maxandre"
+      "copyright": "&copy; Maxandre"
     },
     "ui": {
       "close": "Close",
