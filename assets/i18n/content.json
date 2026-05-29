@@ -131,7 +131,7 @@
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
           "year": "2025 / 2026",
-          "description": "Développement d'une application mobile avec Flutter, communicante avec une base de données Firebase. Système de messagerie, followers et de posts."
+          "description": "Développement d'un réseau social mobile et web (Flutter & Firebase). Messagerie chiffrée de bout en bout, posts publics/privés, partage de contenu."
         },
         "gameJam": {
           "title": "Code Game Jam IUT Montpellier-Sète",
@@ -155,10 +155,19 @@
         }
       },
       "projects": {
+        "blackjackpython": {
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/blackjackPython\" target=\"_blank\" rel=\"noopener noreferrer\">BlackJack Python</a>",
+          "year": "2022",
+          "descriptionHtml": "Un jeu de blackjack simple sans interface graphique jouable sur un terminal.",
+          "bullets": [
+            "Python",
+            "Super fun (I guess?)"
+          ]
+        },
         "rockingball": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a>",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/RockingBall/\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a>",
           "year": "2023",
-          "descriptionHtml": "Mon premier projet de jeu vidéo. RockingBall est un jeu simple disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a>. Un designer graphique et moi l'avons publié sous le nom de <a href=\"https://discord.com/invite/DhqmCnzKmz\" target=\"_blank\" rel=\"noopener noreferrer\">Wyvern Studio</a>. <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">Le jeu est gratuit.</a>",
+          "descriptionHtml": "Mon premier projet de jeu vidéo : RockingBall. Un designer graphique et moi l'avons publié sous le nom de <a href=\"https://discord.com/invite/DhqmCnzKmz\" target=\"_blank\" rel=\"noopener noreferrer\">Wyvern Studio</a>.",
           "bullets": [
             "Gestion du développement de jeux vidéo mobile",
             "Création d'un jeu simple avec un gameplay interactif",
@@ -177,9 +186,9 @@
           ]
         },
         "ethixit": {
-          "titleHtml": "<a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
+          "titleHtml": "<a href=\"https://synae.dev/EthixIT/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
           "year": "2023",
-          "descriptionHtml": "J'ai remasterisé un site web pour une entreprise de conseil en informatique. <a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
+          "descriptionHtml": "J'ai remasterisé un site web pour une entreprise de conseil en informatique. <a href=\"https://synae.dev/EthixIT\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
           "bullets": [
             "Amélioration de l'expérience utilisateur (UX)",
             "Refonte de l'interface graphique (UI)",
@@ -190,7 +199,7 @@
         "spacey": {
           "titleHtml": "<a href=\"https://spacey-epitchad.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Space Y</a>",
           "year": "2024",
-          "descriptionHtml": "Il s'agit d'un jeu multijoueur 2D. Avec une équipe de 5 amis, nous avons créé ce jeu appelé SpaceY. C'est un projet scolaire. Nous avons entièrement créé ce projet, des spécifications techniques au jeu lui-même, en passant par la communication, la direction artistique, et plus encore. Il s'agit d'une course entre 2 équipes dans l'espace. Téléchargez le dépôt <a href=\"https://github.com/Maxx-bl/SpaceY\" target=\"_blank\" rel=\"noopener noreferrer\">ici</a>.",
+          "descriptionHtml": "Il s'agit d'un jeu multijoueur 2D. Avec une équipe de 5 amis, nous avons créé ce jeu appelé SpaceY. C'est un projet scolaire. Nous avons entièrement créé ce projet, des spécifications techniques au jeu lui-même, en passant par la communication, la direction artistique, et plus encore. Il s'agit d'une course entre 2 équipes dans l'espace.",
           "bullets": [
             "Développement d'un jeu multijoueur en équipe",
             "Conception du gameplay et des mécaniques de jeu",
@@ -228,9 +237,9 @@
           ]
         },
         "mininote": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a>",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a>",
           "year": "2024",
-          "descriptionHtml": "Une application de prise de notes simple avec un design moderne pour prendre des notes et écrire vos tâches quotidiennes. Disponible sur le <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a> !<br>Ce projet est réalisé avec Flutter (Dart). Consultez mon <a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">dépôt GitHub</a> pour plus d'informations sur ce projet !",
+          "descriptionHtml": "Une application de prise de notes simple avec un design moderne pour prendre des notes et écrire vos tâches quotidiennes.<br>Ce projet est réalisé avec Flutter (Dart). Consultez mon <a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">dépôt GitHub</a> pour plus d'informations sur ce projet !",
           "bullets": [
             "Développement d'application mobile avec Flutter et Dart",
             "Création d'une interface utilisateur simple et efficace",
@@ -286,11 +295,12 @@
         "glyphe": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Glyphe\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a>",
           "year": "2025/2026",
-          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie fonctionnel, ainsi que des publications en fonction des personnes que l'on suit. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Testez l'application web juste ici !</a>",
+          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie chiffrée de bout en bout, ainsi que des publications en fonction des personnes que l'on suit et du partage de contenu. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Testez l'application web juste ici !</a>",
           "bullets": [
             "Développement d'une application mobile/web avec Flutter (Dart)",
             "Utilisation de Firebase pour la gestion des utilisateurs et des messages",
-            "Conception d'une interface utilisateur pour un réseau social moderne"
+            "Conception d'une interface utilisateur pour un réseau social moderne",
+            "Messagerie sécurisée chiffrée de bout en bout"
           ]
         }
       }
@@ -435,7 +445,7 @@
         "glyphe_cv": {
           "title": "Social network « Glyphe »",
           "year": "2025 / 2026",
-          "description": "Development of a mobile application with Flutter, connected to a Firebase database. Messaging system, followers and posts."
+          "description": "Development of a mobile and web social network (Flutter & Firebase). End-to-end encrypted messaging, public/private posts, content sharing."
         },
         "gameJam": {
           "title": "Code Game Jam IUT Montpellier-Sète",
@@ -459,10 +469,19 @@
         }
       },
       "projects": {
+        "blackjackpython": {
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/blackjackPython\" target=\"_blank\" rel=\"noopener noreferrer\">BlackJack Python</a>",
+          "year": "2022",
+          "descriptionHtml": "A simple blackjack game wihtout UI playable on a terminal.",
+          "bullets": [
+            "Python",
+            "Super fun (I guess?)"
+          ]
+        },
         "rockingball": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a>",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/RockingBall/\" target=\"_blank\" rel=\"noopener noreferrer\">RockingBall</a>",
           "year": "2023",
-          "descriptionHtml": "My first video game project. RockingBall is a simple game available on the <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a>. A graphic designer and I published it under <a href=\"https://discord.com/invite/DhqmCnzKmz\" target=\"_blank\" rel=\"noopener noreferrer\">Wyvern Studio</a>. <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.rockingball&hl=fr&gl=US\" target=\"_blank\" rel=\"noopener noreferrer\">The game is free.</a>",
+          "descriptionHtml": "My first video game project : RockingBall. A graphic designer and I published it under <a href=\"https://discord.com/invite/DhqmCnzKmz\" target=\"_blank\" rel=\"noopener noreferrer\">Wyvern Studio</a>.",
           "bullets": [
             "Mobile game development",
             "Simple and interactive gameplay",
@@ -481,9 +500,9 @@
           ]
         },
         "ethixit": {
-          "titleHtml": "<a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
+          "titleHtml": "<a href=\"https://synae.dev/EthixIT\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
           "year": "2023",
-          "descriptionHtml": "I remastered a website for an IT consulting company. <a href=\"https://ethix-technology.com/\" target=\"_blank\" rel=\"noopener noreferrer\">See it here.</a>",
+          "descriptionHtml": "I remastered a website for an IT consulting company. <a href=\"https://synae.dev/EthixIT\" target=\"_blank\" rel=\"noopener noreferrer\">See it here.</a>",
           "bullets": [
             "Improved user experience (UX)",
             "UI redesign",
@@ -494,7 +513,7 @@
         "spacey": {
           "titleHtml": "<a href=\"https://spacey-epitchad.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Space Y</a>",
           "year": "2024",
-          "descriptionHtml": "A 2D multiplayer game built with 5 friends as a school project. We covered technical specs, development, communication, art direction, and more. It's a race between two teams in space. Repository <a href=\"https://github.com/Maxx-bl/SpaceY\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.",
+          "descriptionHtml": "A 2D multiplayer game built with 5 friends as a school project. We covered technical specs, development, communication, art direction, and more. It's a race between two teams in space.",
           "bullets": [
             "Team-based multiplayer game development",
             "Gameplay and mechanics design",
@@ -532,9 +551,9 @@
           ]
         },
         "mininote": {
-          "titleHtml": "<a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a>",
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">MiniNote</a>",
           "year": "2024",
-          "descriptionHtml": "A minimal note-taking app for notes and daily tasks. Available on the <a href=\"https://play.google.com/store/apps/details?id=com.wyvernstudio.mininote&hl=fr\" target=\"_blank\" rel=\"noopener noreferrer\">Play Store</a>.<br>Built with Flutter (Dart). Repo <a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.",
+          "descriptionHtml": "A minimal note-taking app for notes and daily tasks.<br>Built with Flutter (Dart). Repo <a href=\"https://github.com/Maxx-bl/NotebookApp\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.",
           "bullets": [
             "Mobile development with Flutter and Dart",
             "Simple and efficient UI",
@@ -590,11 +609,12 @@
         "glyphe": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Glyphe\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a>",
           "year": "2025/2026",
-          "descriptionHtml": "I completed my ambitious social media project! Using Flutter and Firebase, I built a fully functional messaging system as well as a post feed based on who you follow. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the web app here!</a>",
+          "descriptionHtml": "I completed my ambitious social network project! Using Flutter and Firebase, I built an end-to-end encrypted messaging system, as well as posts based on who you follow and content sharing. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the web app right here!</a>",
           "bullets": [
             "Mobile/web app development with Flutter (Dart)",
             "Firebase for user management and messaging",
-            "Designing a modern social media UI"
+            "Designing a modern social media UI",
+            "End-to-end encrypted messaging"
           ]
         }
       }

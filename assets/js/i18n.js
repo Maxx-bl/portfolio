@@ -10,6 +10,7 @@
 
   // ── Project image map ───────────────────────────────────────────────────
   const PROJECT_IMAGES = {
+    blackjackpython: 'images/work/blackjackpython.png',
     rockingball:  'images/work/rockingball.png',
     ethixmarine:  'images/work/ethixmarine.png',
     ethixit:      'images/work/ethixit.png',
