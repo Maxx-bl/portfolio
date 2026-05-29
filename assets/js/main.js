@@ -75,11 +75,35 @@
     });
   }
 
+  function setThemeIcon(dark) {
+    const icon = dark ? 'fa-moon' : 'fa-sun';
+    document.querySelectorAll('#theme-toggle i, #mobile-theme-btn i').forEach(el => {
+      el.className = `fa-solid ${icon}`;
+    });
+  }
+
+  function initTheme() {
+    const stored = localStorage.getItem('theme');
+    const dark = stored === 'dark';
+    if (dark) document.body.classList.add('dark');
+    setThemeIcon(dark);
+
+    const toggle = (e) => {
+      const isDark = document.body.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      setThemeIcon(isDark);
+    };
+
+    document.getElementById('theme-toggle')?.addEventListener('click', toggle);
+    document.getElementById('mobile-theme-btn')?.addEventListener('click', toggle);
+  }
+
   function init() {
     initNav();
     initBurger();
     initHash();
     initModal();
+    initTheme();
     showPage(getHashPage());
   }
 

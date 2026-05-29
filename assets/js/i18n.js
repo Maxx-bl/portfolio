@@ -3,7 +3,7 @@
 (function () {
   const CONTENT_URL = 'assets/i18n/content.json';
   const STORAGE_KEY = 'lang';
-  const FALLBACK    = 'en';
+  const FALLBACK    = 'fr';
 
   let dictionary = null;
   let currentLang = FALLBACK;
@@ -261,6 +261,9 @@
     // Language toggle state
     const toggle = document.getElementById('lang-toggle');
     if (toggle) toggle.checked = lang === 'en';
+
+    const mobileBtn = document.getElementById('mobile-lang-btn');
+    if (mobileBtn) mobileBtn.textContent = lang.toUpperCase();
   }
 
   // ── Lang detection & persistence ─────────────────────────────────────────
@@ -280,8 +283,14 @@
 
   function wireToggle() {
     const toggle = document.getElementById('lang-toggle');
-    if (!toggle) return;
-    toggle.addEventListener('change', () => setLanguage(toggle.checked ? 'en' : 'fr'));
+    if (toggle) {
+      toggle.addEventListener('change', () => setLanguage(toggle.checked ? 'en' : 'fr'));
+    }
+
+    const mobileBtn = document.getElementById('mobile-lang-btn');
+    if (mobileBtn) {
+      mobileBtn.addEventListener('click', () => setLanguage(currentLang === 'fr' ? 'en' : 'fr'));
+    }
   }
 
   async function init() {
