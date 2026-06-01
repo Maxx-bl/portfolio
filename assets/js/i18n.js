@@ -25,6 +25,7 @@
     beerfinity:   'images/work/beerfinity-codegamejam2026.png',
     maxiflop:     'images/work/maxiflop.png',
     glyphe:       'images/work/glyphe.png',
+    paired:       'images/work/paired.png',
   };
 
   // ── Helpers ─────────────────────────────────────────────────────────────

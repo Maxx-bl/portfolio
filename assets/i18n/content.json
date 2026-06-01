@@ -128,6 +128,11 @@
     "work": {
       "title": "Projets",
       "cvProjects": {
+        "paired_cv": {
+        "title": "Service de partage de fichiers « Paired »",
+        "year": "2026",
+        "description": "Service web de transfert de fichiers P2P / TURN. Sessions éphémères et messagerie anonyme chiffrée de bout en bout."
+      },
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
           "year": "2025 / 2026",
@@ -302,6 +307,16 @@
             "Conception d'une interface utilisateur pour un réseau social moderne",
             "Messagerie sécurisée chiffrée de bout en bout"
           ]
+        },
+        "paired": {
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Paired/\" target=\"_blank\" rel=\"noopener noreferrer\">Paired</a>",
+          "year": "2026",
+          "descriptionHtml": "J'ai créé un service de partage de fichiers gratuit et sans avoir besoin de se connecter à un compte. Envoyez des fichiers jusqu'à 10 Go à n'importe qui dans le monde via une interface web ultra simple et minimaliste. Une messagerie chiffrée de bout en bout est intégrée dans l'app, chaque session est éphémère et anonyme, les données sont détruites en fin de session. <a href=\"https://paired.synae.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Cliquez ici pour utiliser le site.</a>",
+          "bullets": [
+            "Partage de fichiers pair-à-pair",
+            "Serveur TURN relay",
+            "Messagerie chiffrée de bout en bout"
+          ]
         }
       }
     },
@@ -441,33 +456,6 @@
     },
     "work": {
       "title": "Projects",
-      "cvProjects": {
-        "glyphe_cv": {
-          "title": "Social network « Glyphe »",
-          "year": "2025 / 2026",
-          "description": "Development of a mobile and web social network (Flutter & Firebase). End-to-end encrypted messaging, public/private posts, content sharing."
-        },
-        "gameJam": {
-          "title": "Code Game Jam IUT Montpellier-Sète",
-          "year": "2025 and 2026",
-          "description": "Video game design (team of 6, 30h) on Godot. Musical rhythm game in C# (2025) and clicker game in GDScript (2026)."
-        },
-        "ethix": {
-          "title": "Ethix IT and Ethix Marine websites",
-          "year": "2023",
-          "description": "Creation of websites for two commercial companies, using HTML, CSS and JavaScript."
-        },
-        "rockingball": {
-          "title": "Mobile game « RockingBall »",
-          "year": "2023 / 2024",
-          "description": "Development on Godot (C#) and publication of a video game on Android, made in collaboration with a graphic designer."
-        },
-        "spaceysolanum": {
-          "title": "Multiplayer games « SpaceY » and « Solanum RPG »",
-          "year": "2022 / 2024",
-          "description": "Design of two multiplayer games using Godot and the discord.js and node.js API."
-        }
-      },
       "projects": {
         "blackjackpython": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/blackjackPython\" target=\"_blank\" rel=\"noopener noreferrer\">BlackJack Python</a>",
@@ -615,6 +603,16 @@
             "Firebase for user management and messaging",
             "Designing a modern social media UI",
             "End-to-end encrypted messaging"
+          ]
+        },
+        "paired": {
+          "titleHtml": "<a href=\"https://github.com/Maxx-bl/Paired/\" target=\"_blank\" rel=\"noopener noreferrer\">Paired</a>",
+          "year": "2026",
+          "descriptionHtml": "I created a file sharing service for free and without the need to log in to an account. Send files up to 10 GB to anyone in the world via a simple and minimalist web interface. An end-to-end encrypted messaging is integrated into the app, each session is ephemeral and anonymous, and data is destroyed at the end of the session. <a href=\"https://paired.synae.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Click here to use the site.</a>",
+          "bullets": [
+            "P2P file transfer",
+            "TURN relay server",
+            "E2EE messaging"
           ]
         }
       }
