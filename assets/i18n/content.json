@@ -3,7 +3,7 @@
     "siteTitle": "Maxandre",
     "header": {
       "name": "Maxandre",
-      "tagline": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1sem/1sem). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
+      "tagline": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1 semaine / 1 semaine). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
       "greeting": {
         "morning": "Bonjour !",
         "afternoon": "Bonjour !",
@@ -25,7 +25,7 @@
     },
     "about": {
       "title": "A propos",
-      "bioHtml": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1sem/1sem). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
+      "bioHtml": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1 semaine / 1 semaine). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
       "educationTitle": "Parcours"
     },
     "education": {
@@ -332,7 +332,7 @@
     "siteTitle": "Maxandre",
     "header": {
       "name": "Maxandre",
-      "tagline": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 week /1 week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
+      "tagline": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 week / 1 week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
       "greeting": {
         "morning": "Good morning!",
         "afternoon": "Good afternoon!",
@@ -354,7 +354,7 @@
     },
     "about": {
       "title": "About",
-      "bioHtml": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1week/1week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
+      "bioHtml": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 week / 1 week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
       "educationTitle": "Education"
     },
     "education": {
