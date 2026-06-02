@@ -70,7 +70,7 @@ const cvProjectsEntries = Object.values(d.work.cvProjects).map(p =>
 ).join('\n\n');
 
 const experienceEntries = d.experience.entries.map(e =>
-  `\\entry{${esc(e.role)} chez ${esc(e.company)}}{${esc(e.period)}}{${esc(stripHtml(e.descriptionHtml))}}`
+  `\\entry{${esc(e.role)} - ${esc(e.company)}}{${esc(e.period)}}{${esc(stripHtml(e.descriptionHtml))}}`
 ).join('\n\n');
 
 const educationEntries = d.education.entries.map(e => {
@@ -159,10 +159,10 @@ ${esc(d.contact.permisB)}\\\\
 \\href{https://www.linkedin.com/in/maxandre-bl/}{linkedin.com/in/maxandre-bl/}\\\\[4pt]
 \\textbf{Portfolio} : \\href{https://portfolio.synae.dev/}{portfolio.synae.dev/}
 
-\\vspace{2pt}
 \\color{lightgray}\\rule{\\linewidth}{0.4pt}
 \\color{black}
 
+\\vspace{-6pt}
 \\section*{COMPÉTENCES}
 
 ${itemize(techItems)}
