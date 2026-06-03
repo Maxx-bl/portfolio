@@ -184,14 +184,14 @@ ${itemize(hobbyItems)}
 \\begin{minipage}[t]{0.67\\linewidth}
 \\vspace{0pt}
 
-\\section*{PROJETS INFORMATIQUES}
-
-${cvProjectsEntries}
-
-\\vspace{14pt}
 \\section*{EXPÉRIENCES PROFESSIONNELLES}
 
 ${experienceEntries}
+
+\\vspace{14pt}
+\\section*{PROJETS INFORMATIQUES}
+
+${cvProjectsEntries}
 
 \\vspace{14pt}
 \\section*{FORMATIONS}

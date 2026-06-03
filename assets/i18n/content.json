@@ -60,7 +60,8 @@
     "skills": {
       "title": "Compétences",
       "technicalGroups": [
-        { "label": "Sécurité & Réseaux",        "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" },
+        { "label": "Sécurité offensive",          "items": "Nmap, Hydra, MetaSploit, Wireshark" },
+        { "label": "Sécurité réseau / défensive", "items": "Firewall, SSH, TCP/IP/UDP" },
         { "label": "DevOps / Conteneurisation", "items": "Docker, GitHub Actions (CI/CD & Pipeline)" },
         { "label": "Développement logiciel",    "items": "Python, Java, C#, C++, C" },
         { "label": "Développement web",         "items": "JavaScript, HTML, CSS, PHP" },
@@ -383,7 +384,8 @@
     "skills": {
       "title": "Skills",
       "technicalGroups": [
-        { "label": "Security & Networks",       "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" },
+        { "label": "Offensive security",          "items": "Nmap, Hydra, MetaSploit, Wireshark" },
+        { "label": "Network security / defensive", "items": "Firewall, SSH, TCP/IP/UDP" },
         { "label": "DevOps / Containerisation", "items": "Docker, GitHub Actions (CI/CD & Pipeline)" },
         { "label": "Software development",      "items": "Python, Java, C#, C++, C" },
         { "label": "Web development",           "items": "JavaScript, HTML, CSS, PHP" },
