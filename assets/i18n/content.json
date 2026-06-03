@@ -61,8 +61,7 @@
       "qualities": [
         { "label": "Travail d'équipe", "description": "Collaboration avec graphistes et développeurs" },
         { "label": "Polyvalence",      "description": "Sécurité, Développement, Réseaux" },
-        { "label": "Pédagogie",        "description": "Cours particuliers à domicile et distanciel" },
-        { "label": "Adaptation",       "description": "Apprentissage rapide de technologies / frameworks" }
+        { "label": "Pédagogie",        "description": "Cours particuliers à domicile et distanciel" }
       ],
       "spokenLabel": "Langues",
       "spoken": [
@@ -125,9 +124,9 @@
           "year": "2025 / 2026",
           "description": "Réseau social web / mobile (Flutter, Firebase & Cloudflare) centrée sur la confidentialité des échanges et le partage de contenu.",
           "bullets": [
-            "Sécurité Cloud & AppSec : Conception de règles d'accès strictes (Firebase Security Rules) et isolation des données. Stockage sécurisé des clés sur l'appareil (Secure Storage)",
+            "Sécurité Cloud & AppSec : Conception de règles d'accès strictes (Firebase Security Rules). Stockage sécurisé des clés sur l'appareil (Secure Storage)",
             "DevSecOps & CI/CD : Automatisation du build et déploiement continu de la version Web via GitHub Actions vers une infrastructure dédiée",
-            "Stockage & Distribution : Gestion d'un bucket Cloudflare R2 avec contrôle des flux (limitation de taille) et mise en place de la plateforme de distribution sécurisée de l'APK Android"
+            "Stockage & Distribution : Gestion d'un bucket Cloudflare R2 avec contrôle des flux et mise en place de la plateforme de distribution sécurisée de l'APK Android"
           ]
         },
         "projets_secondaires": {
