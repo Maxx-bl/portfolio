@@ -1,13 +1,9 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage{fontspec}
-\setmainfont{Public Sans}[
-  Path           = ./fonts/,
-  Extension      = .ttf,
-  BoldFont       = PublicSans-Bold,
-  ItalicFont     = PublicSans-Italic,
-  BoldItalicFont = PublicSans-BoldItalic
-]
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage{geometry}
 \usepackage{xcolor}
@@ -54,15 +50,15 @@
 \begin{minipage}[t]{0.18\linewidth}
   \vspace{0pt}
   \begin{tikzpicture}
-    \draw[fill=lightgray!40, draw=lightgray] (0,0) circle (1.5cm);
-    \node at (0,0) {\small Photo};
+    \clip (0,0) circle (1.5cm);
+    \node at (0,0) {\includegraphics[width=3cm]{./photo.jpg}};
   \end{tikzpicture}
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.79\linewidth}
   \vspace{0pt}
   {\fontsize{28}{32}\selectfont\textbf{Maxandre Berson-Lefuel}}\\[6pt]
-  Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1sem/1sem). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.
+  Étudiant ingénieur à l'EFREI spécialisé en réseaux et sécurité, je recherche une alternance DevSecOps (année 2026-2027, 1 semaine / 1 semaine). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.
 \end{minipage}
 
 \vspace{8pt}
@@ -76,27 +72,29 @@
 Marcoussis (91460)\\
 Permis B\\
 \href{https://www.linkedin.com/in/maxandre-bl/}{linkedin.com/in/maxandre-bl/}\\[4pt]
-\textbf{Portfolio} : \href{https://maxx-bl.github.io/}{maxx-bl.github.io/}
+\textbf{Portfolio} : \href{https://portfolio.synae.dev/}{portfolio.synae.dev/}
 
-\vspace{2pt}
 \color{lightgray}\rule{\linewidth}{0.4pt}
 \color{black}
 
+\vspace{-6pt}
 \section*{COMPÉTENCES}
 
 \begin{itemize}
-  \item \textbf{Développement web :}\\
-    JavaScript, HTML, CSS, PHP
-  \item \textbf{Développement logiciel :}\\
-    Python, Java, C\#, C++, C
-  \item \textbf{Base de données :}\\
-    SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo
-  \item \textbf{Outils :}\\
-    Flutter, React Native, Unity, Godot, Docker
-  \item \textbf{GIT :}\\
-    GitHub, GitLab, Bash + GUI
   \item \textbf{Sécurité \& Réseaux :}\\
     Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall
+  \item \textbf{DevOps / Conteneurisation :}\\
+    Docker, GitHub Actions (CI/CD \& Pipeline)
+  \item \textbf{Développement logiciel :}\\
+    Python, Java, C\#, C++, C
+  \item \textbf{Développement web :}\\
+    JavaScript, HTML, CSS, PHP
+  \item \textbf{Base de données :}\\
+    SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo
+  \item \textbf{GIT :}\\
+    GitHub, GitLab, Bash + GUI
+  \item \textbf{Outils :}\\
+    Flutter, Godot, React Native, Unity
 \end{itemize}
 
 \section*{QUALITÉS}
@@ -118,7 +116,7 @@ Permis B\\
 \section*{LOISIRS}
 
 \begin{itemize}
-  \item \textbf{Musique :} Piano (classique, pop, indé) depuis 2012, Composition (FL Studio)
+  \item \textbf{Musique :} Piano (classique, pop, indé) depuis 2012
   \item \textbf{Sport :} Callisthénie
 \end{itemize}
 
@@ -127,9 +125,20 @@ Permis B\\
 \begin{minipage}[t]{0.67\linewidth}
 \vspace{0pt}
 
+\section*{EXPÉRIENCES PROFESSIONNELLES}
+
+\entry{Développeur C\# - Simutech uae}{2026}{Développement \& conception d'une application de post traitement de données/mesures (tests API, analyse de flux).}
+
+\entry{Tuteur - IUT Paris-Saclay}{2025 / 2026}{Cours de soutien en C++ et système Linux aux élèves de première année.}
+
+\entry{Enseignant particulier - À domicile / distanciel}{2024 / 2026}{Soutien scolaire en Mathématiques, Informatique (élèves lycée), aide aux devoirs / babysitting (élèves primaire).}
+
+\vspace{14pt}
 \section*{PROJETS INFORMATIQUES}
 
-\entry{Réseau social « Glyphe »}{2025 / 2026}{Développement d'une application mobile avec Flutter, communicante avec une base de données Firebase. Système de messagerie, followers et de posts.}
+\entry{Service de partage de fichiers « Paired »}{2026}{Service web de transfert de fichiers P2P / TURN. Sessions éphémères et messagerie anonyme chiffrée de bout en bout.}
+
+\entry{Réseau social « Glyphe »}{2025 / 2026}{Développement d'un réseau social mobile et web (Flutter \& Firebase). Messagerie chiffrée de bout en bout, posts publics/privés, partage de contenu.}
 
 \entry{Code Game Jam IUT Montpellier-Sète}{2025 et 2026}{Conception de jeux vidéo (équipe de 6 personnes, 30h) sur Godot. Jeu de rythme musical en C\# (2025) et clicker game en GDScript (2026).}
 
@@ -140,20 +149,11 @@ Permis B\\
 \entry{Jeux multijoueurs « SpaceY » et « Solanum RPG »}{2022 / 2024}{Conception de deux jeux multijoueurs, Godot et utilisation de l'API discord.js et node.js.}
 
 \vspace{14pt}
-\section*{EXPÉRIENCES PROFESSIONNELLES}
-
-\entry{Développeur C\# chez Simutech uae}{2026}{Développement \& conception d'une application de post traitement de données/mesures (tests API, analyse de flux).}
-
-\entry{Tuteur chez IUT Paris-Saclay}{2025 / 2026}{Cours de soutien en C++ et système Linux aux élèves de première année.}
-
-\entry{Enseignant particulier chez À domicile / distanciel}{2024 / 2026}{Soutien scolaire en Mathématiques, Informatique (élèves lycée), aide aux devoirs / babysitting (élèves primaire).}
-
-\vspace{14pt}
 \section*{FORMATIONS}
 
 \entry{EFREI, Majeure réseaux \& sécurité}{2026 / 2029}{Cycle ingénieur, majeure réseaux \& sécurité.}
 
-\entry{IUT d'Orsay, DUT Informatique}{2024 / 2026}{Section anglophone, spécialité cybersécurité \& réseaux, option mathématiques ingénieur.}
+\entry{IUT d'Orsay, DUT Informatique}{2024 / 2026}{Spécialité cybersécurité \& réseaux, option mathématiques ingénieur, section anglophone.}
 
 \entry{EPITA, Prépa intégrée}{2023 / 2024}{Première année de programme préparatoire intégré.}
 

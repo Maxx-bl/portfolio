@@ -20,7 +20,7 @@
       "cvButtonLabel": "Télécharger mon CV"
     },
     "about": {
-      "bioHtml": "Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1 semaine / 1 semaine). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT."
+      "bioHtml": "Étudiant ingénieur à l'EFREI spécialisé en réseaux et sécurité, je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Sécurité des applications, conteneurisation, architectures chiffrées, je maîtrise également les outils offensifs et le développement full-stack."
     },
     "education": {
       "title": "Formation",
@@ -60,12 +60,13 @@
     "skills": {
       "title": "Compétences",
       "technicalGroups": [
-        { "label": "Développement web",      "items": "JavaScript, HTML, CSS, PHP" },
-        { "label": "Développement logiciel", "items": "Python, Java, C#, C++, C" },
-        { "label": "Base de données",        "items": "SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo" },
-        { "label": "Outils",                 "items": "Flutter, React Native, Unity, Godot, Docker" },
-        { "label": "GIT",                    "items": "GitHub, GitLab, Bash + GUI" },
-        { "label": "Sécurité & Réseaux",     "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" }
+        { "label": "Sécurité & Réseaux",        "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" },
+        { "label": "DevOps / Conteneurisation", "items": "Docker, GitHub Actions (CI/CD & Pipeline)" },
+        { "label": "Développement logiciel",    "items": "Python, Java, C#, C++, C" },
+        { "label": "Développement web",         "items": "JavaScript, HTML, CSS, PHP" },
+        { "label": "Base de données",           "items": "SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo" },
+        { "label": "GIT",                       "items": "GitHub, GitLab, Bash + GUI" },
+        { "label": "Outils",                    "items": "Flutter, Godot, React Native, Unity" }
       ],
       "qualitiesLabel": "Qualités",
       "qualities": [
@@ -382,12 +383,13 @@
     "skills": {
       "title": "Skills",
       "technicalGroups": [
-        { "label": "Web development",      "items": "JavaScript, HTML, CSS, PHP" },
-        { "label": "Software development", "items": "Python, Java, C#, C++, C" },
-        { "label": "Databases",            "items": "SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo" },
-        { "label": "Tools",                "items": "Flutter, React Native, Unity, Godot, Docker" },
-        { "label": "GIT",                  "items": "GitHub, GitLab, Bash + GUI" },
-        { "label": "Security & Networks",  "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" }
+        { "label": "Security & Networks",       "items": "Wireshark, Nmap, Hydra, MetaSploit, TCP/IP/UDP, SSH, Firewall" },
+        { "label": "DevOps / Containerisation", "items": "Docker, GitHub Actions (CI/CD & Pipeline)" },
+        { "label": "Software development",      "items": "Python, Java, C#, C++, C" },
+        { "label": "Web development",           "items": "JavaScript, HTML, CSS, PHP" },
+        { "label": "Databases",                 "items": "SQL, MySQL, SQLite, Oracle, UML, Looping, Mocodo" },
+        { "label": "GIT",                       "items": "GitHub, GitLab, Bash + GUI" },
+        { "label": "Tools",                     "items": "Flutter, Godot, React Native, Unity" }
       ],
       "qualitiesLabel": "Soft skills",
       "qualities": [
