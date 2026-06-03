@@ -94,7 +94,7 @@
           "descriptionHtml": "Tutorat et soutien scolaire / universitaire.",
           "bullets": [
             "Enseignement des systèmes Linux et développement C++ (élèves de BUT informatique)",
-            "Cours particuliers de mathématiques et d'informatique (niveau Lycée), et aide aux devoirs."
+            "Cours particuliers de mathématiques et d'informatique (niveau Lycée), et aide aux devoirs"
           ]
         }
       ]
@@ -122,7 +122,7 @@
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
           "year": "2025 / 2026",
-          "description": "Réseau social web / mobile (Flutter, Firebase & Cloudflare) centrée sur la confidentialité des échanges et le partage de contenu.",
+          "description": "Réseau social Web/ mobile (Flutter, Firebase & Cloudflare) centrée sur la confidentialité des échanges et le partage de contenu.",
           "bullets": [
             "Sécurité Cloud & AppSec : Conception de règles d'accès strictes (Firebase Security Rules). Stockage sécurisé des clés sur l'appareil (Secure Storage)",
             "DevSecOps & CI/CD : Automatisation du build et déploiement continu de la version Web via GitHub Actions vers une infrastructure dédiée",
@@ -164,9 +164,9 @@
         "ethixmarine": {
           "titleHtml": "<a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix Marine</a>",
           "year": "2024",
-          "descriptionHtml": "J'ai créé un site web pour une entreprise de réparation et de maintenance de bateaux. Le projet est terminé, mais je garde le site sur mon github. <a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
+          "descriptionHtml": "J'ai créé un site Web pour une entreprise de réparation et de maintenance de bateaux. Le projet est terminé, mais je garde le site sur mon github. <a href=\"https://maxx-bl.github.io/EthixMarine/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
           "bullets": [
-            "Développement web avec HTML, CSS, et JavaScript",
+            "Développement Web avec HTML, CSS, et JavaScript",
             "Conception d'une interface utilisateur responsive",
             "Création d'un site professionnel pour une entreprise réelle"
           ]
@@ -174,11 +174,11 @@
         "ethixit": {
           "titleHtml": "<a href=\"https://synae.dev/EthixIT/\" target=\"_blank\" rel=\"noopener noreferrer\">Ethix IT</a>",
           "year": "2023",
-          "descriptionHtml": "J'ai remasterisé un site web pour une entreprise de conseil en informatique. <a href=\"https://synae.dev/EthixIT\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
+          "descriptionHtml": "J'ai remasterisé un site Web pour une entreprise de conseil en informatique. <a href=\"https://synae.dev/EthixIT\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le ici.</a>",
           "bullets": [
             "Amélioration de l'expérience utilisateur (UX)",
             "Refonte de l'interface graphique (UI)",
-            "Utilisation de technologies web modernes",
+            "Utilisation de technologies Web modernes",
             "SEO"
           ]
         },
@@ -194,7 +194,7 @@
           ]
         },
         "portfolio": {
-          "titleHtml": "Mon site web",
+          "titleHtml": "Mon site Web",
           "year": "2024",
           "descriptionHtml": "J'ai créé mon site de portfolio, vous y êtes actuellement.",
           "bullets": [
@@ -247,14 +247,14 @@
           "year": "2025",
           "descriptionHtml": "J'ai créé un site portfolio pour une cliente. Elle travaille dans le cinéma et l'audiovisuel. <a href=\"https://lea-pelletier.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Consultez-le maintenant !</a>",
           "bullets": [
-            "Développement de sites web responsives avec HTML, CSS, et JavaScript",
+            "Développement de sites Web responsives avec HTML, CSS, et JavaScript",
             "Conception d'une interface moderne et adaptée à l'industrie audiovisuelle"
           ]
         },
         "mediafinder": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/cwad-mediafinder\" target=\"_blank\" rel=\"noopener noreferrer\">CWAD Mediafinder</a>",
           "year": "2024",
-          "descriptionHtml": "Mediafinder est un site web créé dans le cadre d'un projet scolaire. L'objectif était de construire un site pour une association dont le but est de rassembler des personnes afin de retrouver des médias perdus.",
+          "descriptionHtml": "Mediafinder est un site Web créé dans le cadre d'un projet scolaire. L'objectif était de construire un site pour une association dont le but est de rassembler des personnes afin de retrouver des médias perdus.",
           "bullets": []
         },
         "beerfinity": {
@@ -281,9 +281,9 @@
         "glyphe": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Glyphe\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a>",
           "year": "2025/2026",
-          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie chiffrée de bout en bout, ainsi que des publications en fonction des personnes que l'on suit et du partage de contenu. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Testez l'application web juste ici !</a>",
+          "descriptionHtml": "J'ai terminé mon projet ambitieux de création d'un réseau social ! En utilisant Flutter et Firebase, j'ai déjà créé un système de messagerie chiffrée de bout en bout, ainsi que des publications en fonction des personnes que l'on suit et du partage de contenu. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Testez l'application Web juste ici !</a>",
           "bullets": [
-            "Développement d'une application mobile/web avec Flutter (Dart)",
+            "Développement d'une application mobile/Web avec Flutter (Dart)",
             "Utilisation de Firebase pour la gestion des utilisateurs et des messages",
             "Conception d'une interface utilisateur pour un réseau social moderne",
             "Messagerie sécurisée chiffrée de bout en bout"
@@ -292,7 +292,7 @@
         "paired": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Paired/\" target=\"_blank\" rel=\"noopener noreferrer\">Paired</a>",
           "year": "2026",
-          "descriptionHtml": "J'ai créé un service de partage de fichiers gratuit et sans avoir besoin de se connecter à un compte. Envoyez des fichiers jusqu'à 10 Go à n'importe qui dans le monde via une interface web ultra simple et minimaliste. Une messagerie chiffrée de bout en bout est intégrée dans l'app, chaque session est éphémère et anonyme, les données sont détruites en fin de session. <a href=\"https://paired.synae.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Cliquez ici pour utiliser le site.</a>",
+          "descriptionHtml": "J'ai créé un service de partage de fichiers gratuit et sans avoir besoin de se connecter à un compte. Envoyez des fichiers jusqu'à 10 Go à n'importe qui dans le monde via une interface Web ultra simple et minimaliste. Une messagerie chiffrée de bout en bout est intégrée dans l'app, chaque session est éphémère et anonyme, les données sont détruites en fin de session. <a href=\"https://paired.synae.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Cliquez ici pour utiliser le site.</a>",
           "bullets": [
             "Partage de fichiers pair-à-pair",
             "Serveur TURN relay",
@@ -470,7 +470,7 @@
           "bullets": [
             "Improved user experience (UX)",
             "UI redesign",
-            "Modern web technologies",
+            "Modern Webtechnologies",
             "SEO Optimization"
           ]
         },
@@ -573,9 +573,9 @@
         "glyphe": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Glyphe\" target=\"_blank\" rel=\"noopener noreferrer\">Glyphe</a>",
           "year": "2025/2026",
-          "descriptionHtml": "I completed my ambitious social network project! Using Flutter and Firebase, I built an end-to-end encrypted messaging system, as well as posts based on who you follow and content sharing. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the web app right here!</a>",
+          "descriptionHtml": "I completed my ambitious social network project! Using Flutter and Firebase, I built an end-to-end encrypted messaging system, as well as posts based on who you follow and content sharing. <a href=\"https://maxx-bl.github.io/Glyphe/\" target=\"_blank\" rel=\"noopener noreferrer\">Try the Webapp right here!</a>",
           "bullets": [
-            "Mobile/web app development with Flutter (Dart)",
+            "Mobile/Webapp development with Flutter (Dart)",
             "Firebase for user management and messaging",
             "Designing a modern social media UI",
             "End-to-end encrypted messaging"
@@ -584,7 +584,7 @@
         "paired": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/Paired/\" target=\"_blank\" rel=\"noopener noreferrer\">Paired</a>",
           "year": "2026",
-          "descriptionHtml": "I created a file sharing service for free and without the need to log in to an account. Send files up to 10 GB to anyone in the world via a simple and minimalist web interface. An end-to-end encrypted messaging is integrated into the app, each session is ephemeral and anonymous, and data is destroyed at the end of the session. <a href=\"https://paired.synae.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Click here to use the site.</a>",
+          "descriptionHtml": "I created a file sharing service for free and without the need to log in to an account. Send files up to 10 GB to anyone in the world via a simple and minimalist Webinterface. An end-to-end encrypted messaging is integrated into the app, each session is ephemeral and anonymous, and data is destroyed at the end of the session. <a href=\"https://paired.synae.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Click here to use the site.</a>",
           "bullets": [
             "P2P file transfer",
             "TURN relay server",
