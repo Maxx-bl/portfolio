@@ -143,7 +143,7 @@ const tex = `\\documentclass[10pt,a4paper]{article}
 \\begin{minipage}[t]{0.79\\linewidth}
   \\vspace{0pt}
   {\\fontsize{28}{32}\\selectfont\\textbf{Maxandre Berson-Lefuel}}\\\\[6pt]
-  ${esc(d.header.tagline)}
+  ${esc(d.about.bioHtml)}
 \\end{minipage}
 
 \\vspace{8pt}

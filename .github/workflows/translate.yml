@@ -1,0 +1,37 @@
+name: Translate FR → EN (Gemini)
+
+on:
+  push:
+    paths:
+      - 'assets/i18n/content.json'
+      - 'scripts/translate.js'
+      - '.github/workflows/translate.yml'
+  workflow_dispatch:
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Translate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/translate.js
+
+      - name: Commit translation
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/i18n/content.json
+          git diff --cached --quiet || (git pull --rebase origin main && git commit -m "build: regenerate EN translations [skip ci]" && git push)
