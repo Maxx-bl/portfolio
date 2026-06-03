@@ -38,22 +38,10 @@
           "description": "Spécialité cybersécurité & réseaux, option mathématiques ingénieur, section anglophone."
         },
         {
-          "period": "2023 / 2024",
-          "institution": "EPITA",
-          "degree": "Prépa intégrée",
-          "description": "Première année de programme préparatoire intégré."
-        },
-        {
           "period": "2020 / 2023",
           "institution": "Lycée Institution du Sacré-Cœur / Essouriau",
           "degree": "Baccalauréat général",
           "description": "Mention bien, spécialités Mathématiques et NSI."
-        },
-        {
-          "period": "2020",
-          "institution": "Secourisme",
-          "degree": "PSC1",
-          "description": "Obtention du brevet de secourisme PSC1."
         }
       ]
     },
