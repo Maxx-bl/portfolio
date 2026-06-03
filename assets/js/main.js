@@ -71,7 +71,24 @@
       if (e.target === e.currentTarget) closeModal();
     });
     document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') closeModal();
+      if (e.key === 'Escape') {
+        closeModal();
+        closeCvModal();
+      }
+    });
+  }
+
+  function closeCvModal() {
+    const modal = document.getElementById('cv-modal');
+    if (modal) modal.hidden = true;
+  }
+
+  function initCvModal() {
+    document.getElementById('cv-button')?.addEventListener('click', () => {
+      document.getElementById('cv-modal').hidden = false;
+    });
+    document.getElementById('cv-modal')?.addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeCvModal();
     });
   }
 
@@ -103,6 +120,7 @@
     initBurger();
     initHash();
     initModal();
+    initCvModal();
     initTheme();
     showPage(getHashPage());
   }

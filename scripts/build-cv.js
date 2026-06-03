@@ -1,30 +1,21 @@
 #!/usr/bin/env node
 /**
  * build-cv.js
- * Reads content.json (FR), generates a LaTeX .tex file, compiles it with
- * pdfLaTeX, and outputs assets/files/cv-maxandre.pdf.
+ * Reads content.json, generates FR and EN LaTeX files, compiles both with
+ * pdfLaTeX, and outputs cv-maxandre-fr.pdf / cv-maxandre-en.pdf.
  *
  * Usage:  node scripts/build-cv.js
- *
- * Requirements:
- *   - XeLaTeX installed (TeX Live, MiKTeX, etc.)
- *   - fonts/PublicSans-*.ttf present next to this file (already bundled)
  */
 
 const fs   = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-// ── Paths ─────────────────────────────────────────────────────────────────
-const ROOT       = path.resolve(__dirname, '..');
-const CONTENT    = path.join(ROOT, 'assets', 'i18n', 'content.json');
-const OUT_TEX    = path.join(__dirname, 'cv-output.tex');
-const OUT_DIR    = path.join(ROOT, 'assets', 'files');
-const FINAL_PDF  = path.join(OUT_DIR, 'cv-maxandre.pdf');
+const ROOT    = path.resolve(__dirname, '..');
+const CONTENT = path.join(ROOT, 'assets', 'i18n', 'content.json');
+const OUT_DIR = path.join(ROOT, 'assets', 'files');
 
-// ── Load data ─────────────────────────────────────────────────────────────
 const json = JSON.parse(fs.readFileSync(CONTENT, 'utf8'));
-const d    = json.fr;
 
 // ── LaTeX helpers ─────────────────────────────────────────────────────────
 function esc(str) {
@@ -48,7 +39,6 @@ function itemize(lines) {
   return `\\begin{itemize}\n${lines.map(l => `  \\item ${l}`).join('\n')}\n\\end{itemize}`;
 }
 
-// ── Build sections ────────────────────────────────────────────────────────
 function latexEntry(title, year, desc, bullets) {
   const header = `\\textbf{${title}} \\hfill \\textit{\\small ${year}}\\\\`;
   const body   = `  \\small ${desc}`;
@@ -59,41 +49,43 @@ function latexEntry(title, year, desc, bullets) {
   return `${header}\n${body}\\par\\vspace{8pt}`;
 }
 
-const techItems = d.skills.technicalGroups.map(g =>
-  `\\textbf{${esc(g.label)} :}\\\\\n    ${esc(g.items)}`
-);
+// ── Build + compile one language ──────────────────────────────────────────
+function buildForLang(langCode) {
+  const d = json[langCode];
+  const s = d.cv.sections;
 
-const qualityItems = d.skills.qualities.map(q =>
-  `\\textbf{${esc(q.label)} :} ${esc(q.description)}`
-);
+  const techItems = d.skills.technicalGroups.map(g =>
+    `\\textbf{${esc(g.label)} :}\\\\\n    ${esc(g.items)}`
+  );
 
-const spokenItems = d.skills.spoken.map(s =>
-  `\\textbf{${esc(s.label)}} (${esc(s.description)})`
-);
+  const qualityItems = d.skills.qualities.map(q =>
+    `\\textbf{${esc(q.label)} :} ${esc(q.description)}`
+  );
 
-const hobbyItems = d.skills.hobbies.map(h =>
-  `\\textbf{${esc(h.label)} :} ${esc(h.description)}`
-);
+  const spokenItems = d.skills.spoken.map(sp =>
+    `\\textbf{${esc(sp.label)}} (${esc(sp.description)})`
+  );
 
-const cvProjectsEntries = Object.values(d.work.cvProjects).map(p =>
-  latexEntry(esc(p.title), esc(p.year), esc(p.description), p.bullets)
-).join('\n\n');
+  const hobbyItems = d.skills.hobbies.map(h =>
+    `\\textbf{${esc(h.label)} :} ${esc(h.description)}`
+  );
 
-const experienceEntries = d.experience.entries.map(e =>
-  latexEntry(`${esc(e.role)} - ${esc(e.company)}`, esc(e.period), esc(stripHtml(e.descriptionHtml)), e.bullets)
-).join('\n\n');
+  const cvProjectsEntries = Object.values(d.work.cvProjects).map(p =>
+    latexEntry(esc(p.title), esc(p.year), esc(p.description), p.bullets)
+  ).join('\n\n');
 
-const educationEntries = d.education.entries.map(e => {
-  const title    = `${esc(e.institution)}, ${esc(e.degree)}`;
-  const desc     = esc(e.description || '');
-  if (desc) {
-    return `\\entry{${title}}{${esc(e.period)}}{${desc}}`;
-  }
-  return `\\entryshort{${title}}{${esc(e.period)}}`;
-}).join('\n\n');
+  const experienceEntries = d.experience.entries.map(e =>
+    latexEntry(`${esc(e.role)} - ${esc(e.company)}`, esc(e.period), esc(stripHtml(e.descriptionHtml)), e.bullets)
+  ).join('\n\n');
 
-// ── LaTeX document ────────────────────────────────────────────────────────
-const tex = `\\documentclass[10pt,a4paper]{article}
+  const educationEntries = d.education.entries.map(e => {
+    const title = `${esc(e.institution)}, ${esc(e.degree)}`;
+    const desc  = esc(e.description || '');
+    if (desc) return `\\entry{${title}}{${esc(e.period)}}{${desc}}`;
+    return `\\entryshort{${title}}{${esc(e.period)}}`;
+  }).join('\n\n');
+
+  const tex = `\\documentclass[10pt,a4paper]{article}
 
 \\usepackage[T1]{fontenc}
 \\usepackage[utf8]{inputenc}
@@ -173,19 +165,19 @@ ${esc(d.contact.permisB)}\\\\
 \\color{black}
 
 \\vspace{-6pt}
-\\section*{COMPÉTENCES}
+\\section*{${s.skills}}
 
 ${itemize(techItems)}
 
-\\section*{QUALITÉS}
+\\section*{${s.softSkills}}
 
 ${itemize(qualityItems)}
 
-\\section*{LANGUES}
+\\section*{${s.languages}}
 
 ${itemize(spokenItems)}
 
-\\section*{LOISIRS}
+\\section*{${s.hobbies}}
 
 ${itemize(hobbyItems)}
 
@@ -194,17 +186,17 @@ ${itemize(hobbyItems)}
 \\begin{minipage}[t]{0.67\\linewidth}
 \\vspace{0pt}
 
-\\section*{EXPÉRIENCES PROFESSIONNELLES}
+\\section*{${s.experience}}
 
 ${experienceEntries}
 
 \\vspace{14pt}
-\\section*{PROJETS INFORMATIQUES}
+\\section*{${s.projects}}
 
 ${cvProjectsEntries}
 
 \\vspace{14pt}
-\\section*{FORMATIONS}
+\\section*{${s.education}}
 
 ${educationEntries}
 
@@ -213,28 +205,33 @@ ${educationEntries}
 \\end{document}
 `;
 
-// ── Write & compile ───────────────────────────────────────────────────────
-fs.writeFileSync(OUT_TEX, tex, 'utf8');
-console.log('✓ cv-output.tex written');
+  const outTex   = path.join(__dirname, `cv-output-${langCode}.tex`);
+  const outPdf   = path.join(__dirname, `cv-output-${langCode}.pdf`);
+  const finalPdf = path.join(OUT_DIR, `cv-maxandre-${langCode}.pdf`);
 
-fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.writeFileSync(outTex, tex, 'utf8');
+  console.log(`✓ cv-output-${langCode}.tex written`);
 
-try {
-  execSync(
-    `pdflatex -interaction=nonstopmode -output-directory="${__dirname}" "${OUT_TEX}"`,
-    { stdio: 'inherit', cwd: __dirname }
-  );
+  try {
+    execSync(
+      `pdflatex -interaction=nonstopmode -output-directory="${__dirname}" "${outTex}"`,
+      { stdio: 'inherit', cwd: __dirname }
+    );
 
-  // XeLaTeX outputs to scripts/, move PDF to assets/files/
-  const generatedPdf = path.join(__dirname, 'cv-output.pdf');
-  if (fs.existsSync(generatedPdf)) {
-    fs.copyFileSync(generatedPdf, FINAL_PDF);
-    console.log(`✓ PDF generated: ${FINAL_PDF}`);
-  } else {
-    console.error('✗ PDF not found after compilation');
+    if (fs.existsSync(outPdf)) {
+      fs.copyFileSync(outPdf, finalPdf);
+      console.log(`✓ PDF generated: ${finalPdf}`);
+    } else {
+      console.error(`✗ PDF not found after compilation for ${langCode}`);
+      process.exit(1);
+    }
+  } catch (err) {
+    console.error(`✗ pdflatex failed for ${langCode}:`, err.message);
     process.exit(1);
   }
-} catch (err) {
-  console.error('✗ XeLaTeX failed:', err.message);
-  process.exit(1);
 }
+
+// ── Run both languages ────────────────────────────────────────────────────
+fs.mkdirSync(OUT_DIR, { recursive: true });
+buildForLang('fr');
+buildForLang('en');

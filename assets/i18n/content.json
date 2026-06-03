@@ -17,7 +17,8 @@
       "contact": "Contact"
     },
     "home": {
-      "cvButtonLabel": "Télécharger mon CV"
+      "cvButtonLabel": "Télécharger mon CV",
+      "cvModal": { "title": "Choisir la langue du CV" }
     },
     "about": {
       "bioHtml": "Étudiant ingénieur à l'EFREI (majeure Réseaux & Sécurité), je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Philosophie security-first, least privilege, avec une maîtrise des outils offensifs, des architectures sécurisées et des pipelines CI/CD."
@@ -301,6 +302,17 @@
         }
       }
     },
+    "cv": {
+      "sections": {
+        "skills":     "COMPÉTENCES",
+        "softSkills": "QUALITÉS",
+        "languages":  "LANGUES",
+        "hobbies":    "LOISIRS",
+        "projects":   "PROJETS INFORMATIQUES",
+        "experience": "EXPÉRIENCES PROFESSIONNELLES",
+        "education":  "FORMATIONS"
+      }
+    },
     "footer": {
       "copyright": "&copy; Maxandre"
     },
@@ -327,7 +339,8 @@
       "contact": "Contact"
     },
     "home": {
-      "cvButtonLabel": "Download my resume"
+      "cvButtonLabel": "Download my resume",
+      "cvModal": { "title": "Choose resume language" }
     },
     "about": {
       "bioHtml": "Engineering student at EFREI (Networks & Security major), I am looking for a DevSecOps apprenticeship (1 week on-site / 1 week at school). Security-first, least privilege philosophy, with expertise in offensive tools, secure architectures, and CI/CD pipelines."
@@ -609,6 +622,17 @@
             "E2EE messaging"
           ]
         }
+      }
+    },
+    "cv": {
+      "sections": {
+        "skills":     "SKILLS",
+        "softSkills": "SOFT SKILLS",
+        "languages":  "LANGUAGES",
+        "hobbies":    "HOBBIES",
+        "projects":   "IT PROJECTS",
+        "experience": "PROFESSIONAL EXPERIENCE",
+        "education":  "EDUCATION"
       }
     },
     "footer": {

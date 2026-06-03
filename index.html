@@ -62,7 +62,7 @@
         <p class="home-bio"><span id="home-greeting"></span><span data-i18n="about.bioHtml"></span></p>
       </div>
       <div class="home-actions">
-        <a class="btn" id="cv-button" href="assets/files/cv-maxandre.pdf" download data-i18n="home.cvButtonLabel">Download my resume</a>
+        <button class="btn" id="cv-button" data-i18n="home.cvButtonLabel">Download my resume</button>
       </div>
     </section>
 
@@ -126,6 +126,17 @@
     </section>
 
   </main>
+
+  <!-- CV language picker -->
+  <div id="cv-modal" class="cv-modal-overlay" hidden>
+    <div class="cv-modal-box">
+      <p class="cv-modal-title" data-i18n="home.cvModal.title">Choisir la langue du CV</p>
+      <div class="cv-modal-choices">
+        <a class="btn" href="assets/files/cv-maxandre-fr.pdf" download>Français</a>
+        <a class="btn" href="assets/files/cv-maxandre-en.pdf" download>English</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Project modal -->
   <div id="project-modal" class="modal-overlay" hidden>
