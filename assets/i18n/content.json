@@ -101,18 +101,14 @@
           ]
         },
         {
-          "period": "2025 / 2026",
-          "role": "Tuteur",
-          "company": "IUT Paris-Saclay",
-          "descriptionHtml": "Tutorat et cours de soutien aux élèves de BUT informatique.",
-          "bullets": ["Enseignement des systèmes Linux", "Développement C++"]
-        },
-        {
           "period": "2024 / 2026",
-          "role": "Enseignant particulier",
-          "company": "À domicile / distanciel",
-          "descriptionHtml": "Soutien scolaire et aide aux devoirs",
-          "bullets": ["Cours de mathématiques et d'informatique niveau lycée", "Aide aux devoirs d'élèves de primaire"]
+          "role": "Tuteur & Enseignant particulier",
+          "company": "IUT Paris-Saclay & Indépendant",
+          "descriptionHtml": "Tutorat et soutien scolaire / universitaire.",
+          "bullets": [
+            "Enseignement des systèmes Linux et développement C++ (élèves de BUT informatique)",
+            "Cours particuliers de mathématiques et d'informatique (niveau Lycée), et aide aux devoirs."
+          ]
         }
       ]
     },
