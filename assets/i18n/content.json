@@ -135,32 +135,22 @@
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
           "year": "2025 / 2026",
-          "description": "Développement d'un réseau social mobile et web (Flutter & Firebase). Messagerie chiffrée de bout en bout, posts publics/privés, partage de contenu.",
-          "bullets": []
+          "description": "Réseau social web / mobile (Flutter, Firebase & Cloudflare) centrée sur la confidentialité des échanges et le partage de contenu.",
+          "bullets": [
+            "Sécurité Cloud & AppSec : Conception de règles d'accès strictes (Firebase Security Rules) et isolation des données. Stockage sécurisé des clés sur l'appareil (Secure Storage)",
+            "DevSecOps & CI/CD : Automatisation du build et déploiement continu de la version Web via GitHub Actions vers une infrastructure dédiée",
+            "Stockage & Distribution : Gestion d'un bucket Cloudflare R2 avec contrôle des flux (limitation de taille) et mise en place de la plateforme de distribution sécurisée de l'APK Android"
+          ]
         },
-        "gameJam": {
-          "title": "Code Game Jam IUT Montpellier-Sète",
-          "year": "2025 et 2026",
-          "description": "Conception de jeux vidéo (équipe de 6 personnes, 30h) sur Godot. Jeu de rythme musical en C# (2025) et clicker game en GDScript (2026).",
-          "bullets": []
-        },
-        "ethix": {
-          "title": "Site internet Ethix IT et Ethix Marine",
-          "year": "2023",
-          "description": "Création de sites internet pour deux sociétés commerciales, en utilisant HTML, CSS et JavaScript.",
-          "bullets": []
-        },
-        "rockingball": {
-          "title": "Jeu vidéo mobile « RockingBall »",
-          "year": "2023 / 2024",
-          "description": "Développement sur Godot (C#) et publication d'un jeu vidéo sur Android, réalisé en collaboration avec un graphiste.",
-          "bullets": []
-        },
-        "spaceysolanum": {
-          "title": "Jeux multijoueurs « SpaceY » et « Solanum RPG »",
-          "year": "2022 / 2024",
-          "description": "Conception de deux jeux multijoueurs, Godot et utilisation de l'API discord.js et node.js.",
-          "bullets": []
+        "projets_secondaires": {
+          "title": "Projets Complémentaires & Hackathons",
+          "year": "2022 / 2026",
+          "description": "Ensemble de projets de développement logiciel, applications Web et jeux vidéo multi-utilisateurs.",
+          "bullets": [
+            "Maîtrise du C# & Back-end : Développement de logiques applicatives (C# / Godot) et d'applications multi-utilisateurs via Node.js (API Discord)",
+            "Gestion de projet & Agilité : Collaboration en équipes lors de hackathons (Code Game Jam 2025/2026) avec fortes contraintes de temps",
+            "Publication & Déploiement : Conception de sites vitrines (HTML/CSS/JS) pour des entreprises et publication d'une application mobile sur le Play Store Android"
+          ]
         }
       },
       "projects": {
