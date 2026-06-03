@@ -20,7 +20,7 @@
       "cvButtonLabel": "Télécharger mon CV"
     },
     "about": {
-      "bioHtml": "Étudiant ingénieur à l'EFREI (majeure Réseaux & Sécurité), je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Philosophie security-first, least privilege, avec une maîtrise ses outils offensifs, architectures sécurisées, pipelines CI/CD."
+      "bioHtml": "Étudiant ingénieur à l'EFREI (majeure Réseaux & Sécurité), je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Philosophie security-first, least privilege, avec une maîtrise des outils offensifs, des architectures sécurisées et des pipelines CI/CD."
     },
     "education": {
       "title": "Formation",
@@ -84,7 +84,7 @@
           "descriptionHtml": "Stage ingénierie logicielle et sécurisation des systèmes et infrastructures cloud.",
           "bullets": [
             "Investigation post-attaque, correction de failles et sécurisation des infrastructures VPS", 
-            "Développement C# & conception d'une application de post traitement de mesures, tests API & analyse de flux"
+            "Développement C# & conception d'une application de post-traitement de mesures, tests API & analyse de flux"
           ]
         },
         {
@@ -122,7 +122,7 @@
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
           "year": "2025 / 2026",
-          "description": "Réseau social Web/ mobile (Flutter, Firebase & Cloudflare) centrée sur la confidentialité des échanges et le partage de contenu.",
+          "description": "Réseau social Web/mobile (Flutter, Firebase & Cloudflare) centré sur la confidentialité des échanges et le partage de contenu.",
           "bullets": [
             "Sécurité Cloud & AppSec : Conception de règles d'accès strictes (Firebase Security Rules). Stockage sécurisé des clés sur l'appareil (Secure Storage)",
             "DevSecOps & CI/CD : Automatisation du build et déploiement continu de la version Web via GitHub Actions vers une infrastructure dédiée",
@@ -330,7 +330,7 @@
       "cvButtonLabel": "Download my resume"
     },
     "about": {
-      "bioHtml": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 week / 1 week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree."
+      "bioHtml": "Engineering student at EFREI (Networks & Security major), I am looking for a DevSecOps apprenticeship (1 week on-site / 1 week at school). Security-first, least privilege philosophy, with expertise in offensive tools, secure architectures, and CI/CD pipelines."
     },
     "education": {
       "title": "Education",
@@ -348,22 +348,10 @@
           "description": "Specialization in cybersecurity & networks, engineering mathematics option, english-speaking section."
         },
         {
-          "period": "2023 / 2024",
-          "institution": "EPITA",
-          "degree": "Integrated preparatory program",
-          "description": "First year of integrated preparatory program."
-        },
-        {
           "period": "2020 / 2023",
           "institution": "Lycée Institution du Sacré-Cœur / Essouriau",
           "degree": "General baccalaureate",
           "description": "With honours, specializing in Mathematics and Computer Science (NSI)."
-        },
-        {
-          "period": "2020",
-          "institution": "First Aid",
-          "degree": "PSC1 Certificate",
-          "description": "Obtained the PSC1 first aid certificate."
         }
       ]
     },
@@ -381,10 +369,9 @@
       ],
       "qualitiesLabel": "Soft skills",
       "qualities": [
-        { "label": "Teamwork",      "description": "Collaboration with designers and developers" },
-        { "label": "Versatility",   "description": "Web, Software, Mobile" },
-        { "label": "Teaching",      "description": "Private tutoring in person and remotely" },
-        { "label": "Adaptability",  "description": "Quick learner of new technologies / frameworks" }
+        { "label": "Teamwork",    "description": "Collaboration with designers and developers" },
+        { "label": "Versatility", "description": "Security, Development, Networks" },
+        { "label": "Teaching",    "description": "Private tutoring in person and remotely" }
       ],
       "spokenLabel": "Languages",
       "spoken": [
@@ -393,7 +380,7 @@
       ],
       "hobbiesLabel": "Hobbies",
       "hobbies": [
-        { "label": "Music",  "description": "Piano (classical, pop, indie) since 2012, Composition (FL Studio)" },
+        { "label": "Music",  "description": "Piano (classical, pop, indie) since 2012" },
         { "label": "Sport",  "description": "Calisthenics" }
       ]
     },
@@ -402,24 +389,23 @@
       "entries": [
         {
           "period": "2026",
-          "role": "C# Developer",
+          "role": "Software Engineering & Systems Security",
           "company": "Simutech uae",
-          "descriptionHtml": "Development & design of a data/measurement post-processing application (API testing, flow analysis).",
-          "bullets": ["C#", "API testing", "Data flow analysis"]
-        },
-        {
-          "period": "2025 / 2026",
-          "role": "Tutor",
-          "company": "IUT Paris-Saclay",
-          "descriptionHtml": "Support courses in C++ and Linux systems for first-year students.",
-          "bullets": ["C++", "Linux", "Teaching"]
+          "descriptionHtml": "Software engineering internship and cloud systems & infrastructure hardening.",
+          "bullets": [
+            "Post-attack investigation, vulnerability patching and VPS infrastructure hardening",
+            "C# development & design of a measurement post-processing application, API testing & flow analysis"
+          ]
         },
         {
           "period": "2024 / 2026",
-          "role": "Private tutor",
-          "company": "In-person / remote",
-          "descriptionHtml": "Academic support in Mathematics and Computer Science (high school students), homework help / babysitting (primary school students).",
-          "bullets": ["Mathematics", "Computer Science", "Pedagogy"]
+          "role": "Tutor & Private Teacher",
+          "company": "IUT Paris-Saclay & Independent",
+          "descriptionHtml": "Tutoring and academic support.",
+          "bullets": [
+            "Teaching Linux systems and C++ development (Computer Science students)",
+            "Private lessons in Mathematics and Computer Science (high school level), and homework help"
+          ]
         }
       ]
     },
@@ -432,6 +418,38 @@
       "spokenLabel": "Spoken languages:"
     },
     "work": {
+      "cvProjects": {
+        "paired_cv": {
+          "title": "File Sharing Service « Paired »",
+          "year": "2026",
+          "description": "Zero-trust P2P / TURN file transfer architecture and anonymous messaging.",
+          "bullets": [
+            "E2EE messaging with ECDH-256 and SHA-256",
+            "Stateless system with automated session cleanup via Firebase and Cloudflare Workers",
+            "Automated deployment via CI/CD pipeline (GitHub) to Cloudflare Workers with peer-to-peer network routing"
+          ]
+        },
+        "glyphe_cv": {
+          "title": "Social Network « Glyphe »",
+          "year": "2025 / 2026",
+          "description": "Web/mobile social network (Flutter, Firebase & Cloudflare) focused on privacy and content sharing.",
+          "bullets": [
+            "Cloud Security & AppSec: Strict access rules (Firebase Security Rules). Secure on-device key storage (Secure Storage)",
+            "DevSecOps & CI/CD: Automated build and continuous deployment of the Web version via GitHub Actions to a dedicated infrastructure",
+            "Storage & Distribution: Cloudflare R2 bucket management with flow control and secure Android APK distribution platform"
+          ]
+        },
+        "projets_secondaires": {
+          "title": "Side Projects & Hackathons",
+          "year": "2022 / 2026",
+          "description": "Set of software development projects, web applications, and multiplayer video games.",
+          "bullets": [
+            "C# & Back-end proficiency: Application logic development (C# / Godot) and multi-user applications via Node.js (Discord API)",
+            "Project management & Agility: Team collaboration during hackathons (Code Game Jam 2025/2026) under tight time constraints",
+            "Publishing & Deployment: Commercial showcase websites (HTML/CSS/JS) and Android Play Store mobile app publication"
+          ]
+        }
+      },
       "projects": {
         "blackjackpython": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/blackjackPython\" target=\"_blank\" rel=\"noopener noreferrer\">BlackJack Python</a>",
