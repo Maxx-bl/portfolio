@@ -49,6 +49,16 @@ function itemize(lines) {
 }
 
 // ── Build sections ────────────────────────────────────────────────────────
+function latexEntry(title, year, desc, bullets) {
+  const header = `\\textbf{${title}} \\hfill \\textit{\\small ${year}}\\\\`;
+  const body   = `  \\small ${desc}`;
+  if (bullets && bullets.length > 0) {
+    const items = bullets.map(b => `    \\item ${esc(b)}`).join('\n');
+    return `${header}\n${body}\n  \\begin{itemize}[topsep=1pt,itemsep=0pt,parsep=0pt]\n${items}\n  \\end{itemize}\\vspace{4pt}`;
+  }
+  return `${header}\n${body}\\par\\vspace{8pt}`;
+}
+
 const techItems = d.skills.technicalGroups.map(g =>
   `\\textbf{${esc(g.label)} :}\\\\\n    ${esc(g.items)}`
 );
@@ -66,11 +76,11 @@ const hobbyItems = d.skills.hobbies.map(h =>
 );
 
 const cvProjectsEntries = Object.values(d.work.cvProjects).map(p =>
-  `\\entry{${esc(p.title)}}{${esc(p.year)}}{${esc(p.description)}}`
+  latexEntry(esc(p.title), esc(p.year), esc(p.description), p.bullets)
 ).join('\n\n');
 
 const experienceEntries = d.experience.entries.map(e =>
-  `\\entry{${esc(e.role)} - ${esc(e.company)}}{${esc(e.period)}}{${esc(stripHtml(e.descriptionHtml))}}`
+  latexEntry(`${esc(e.role)} - ${esc(e.company)}`, esc(e.period), esc(stripHtml(e.descriptionHtml)), e.bullets)
 ).join('\n\n');
 
 const educationEntries = d.education.entries.map(e => {

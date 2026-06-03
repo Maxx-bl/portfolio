@@ -92,10 +92,13 @@
       "entries": [
         {
           "period": "2026",
-          "role": "Développeur C#",
+          "role": "DevSecOps & Développement",
           "company": "Simutech uae",
-          "descriptionHtml": "Développement & conception d'une application de post traitement de données/mesures (tests API, analyse de flux).",
-          "bullets": ["C#", "Tests API", "Analyse de flux de données"]
+          "descriptionHtml": "Stage ingénierie logicielle et sécurisation des infrasctructures cloud.",
+          "bullets": [
+            "Analyse de vulnérabilités et audits de sécurité sur les infrastructures VPS", 
+            "Développement & conception d'une application de post traitement de mesures (tests API, analyse de flux)"
+          ]
         },
         {
           "period": "2025 / 2026",
@@ -124,34 +127,40 @@
     "work": {
       "cvProjects": {
         "paired_cv": {
-        "title": "Service de partage de fichiers « Paired »",
-        "year": "2026",
-        "description": "Service web de transfert de fichiers P2P / TURN. Sessions éphémères et messagerie anonyme chiffrée de bout en bout."
-      },
+          "title": "Service de partage de fichiers « Paired »",
+          "year": "2026",
+          "description": "Service web de transfert de fichiers P2P / TURN. Sessions éphémères et messagerie anonyme chiffrée de bout en bout.",
+          "bullets": []
+        },
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
           "year": "2025 / 2026",
-          "description": "Développement d'un réseau social mobile et web (Flutter & Firebase). Messagerie chiffrée de bout en bout, posts publics/privés, partage de contenu."
+          "description": "Développement d'un réseau social mobile et web (Flutter & Firebase). Messagerie chiffrée de bout en bout, posts publics/privés, partage de contenu.",
+          "bullets": []
         },
         "gameJam": {
           "title": "Code Game Jam IUT Montpellier-Sète",
           "year": "2025 et 2026",
-          "description": "Conception de jeux vidéo (équipe de 6 personnes, 30h) sur Godot. Jeu de rythme musical en C# (2025) et clicker game en GDScript (2026)."
+          "description": "Conception de jeux vidéo (équipe de 6 personnes, 30h) sur Godot. Jeu de rythme musical en C# (2025) et clicker game en GDScript (2026).",
+          "bullets": []
         },
         "ethix": {
           "title": "Site internet Ethix IT et Ethix Marine",
           "year": "2023",
-          "description": "Création de sites internet pour deux sociétés commerciales, en utilisant HTML, CSS et JavaScript."
+          "description": "Création de sites internet pour deux sociétés commerciales, en utilisant HTML, CSS et JavaScript.",
+          "bullets": []
         },
         "rockingball": {
           "title": "Jeu vidéo mobile « RockingBall »",
           "year": "2023 / 2024",
-          "description": "Développement sur Godot (C#) et publication d'un jeu vidéo sur Android, réalisé en collaboration avec un graphiste."
+          "description": "Développement sur Godot (C#) et publication d'un jeu vidéo sur Android, réalisé en collaboration avec un graphiste.",
+          "bullets": []
         },
         "spaceysolanum": {
           "title": "Jeux multijoueurs « SpaceY » et « Solanum RPG »",
           "year": "2022 / 2024",
-          "description": "Conception de deux jeux multijoueurs, Godot et utilisation de l'API discord.js et node.js."
+          "description": "Conception de deux jeux multijoueurs, Godot et utilisation de l'API discord.js et node.js.",
+          "bullets": []
         }
       },
       "projects": {
