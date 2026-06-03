@@ -85,7 +85,8 @@
 
   function initCvModal() {
     document.getElementById('cv-button')?.addEventListener('click', () => {
-      document.getElementById('cv-modal').hidden = false;
+      const modal = document.getElementById('cv-modal');
+      if (modal) modal.hidden = false;
     });
     document.getElementById('cv-modal')?.addEventListener('click', e => {
       if (e.target === e.currentTarget) closeCvModal();
