@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('assets/i18n/content.json','utf8'\\)\\); console.log\\('JSON valide'\\)\")"
+    ]
+  }
+}
