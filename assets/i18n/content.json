@@ -1,6 +1,5 @@
 {
   "fr": {
-    "siteTitle": "Maxandre",
     "header": {
       "name": "Maxandre",
       "greeting": {
@@ -11,21 +10,17 @@
     },
     "nav": {
       "home": "Accueil",
-      "about": "A propos",
       "skills": "Compétences",
       "experience": "Expérience",
       "projects": "Projets",
       "education": "Formation",
-      "work": "Projets",
       "contact": "Contact"
     },
     "home": {
       "cvButtonLabel": "Télécharger mon CV"
     },
     "about": {
-      "title": "A propos",
-      "bioHtml": "modification du site internet en cours Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1 semaine / 1 semaine). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT.",
-      "educationTitle": "Parcours"
+      "bioHtml": "modification du site internet en cours Étudiant ingénieur à l'EFREI en informatique spécialisé en réseaux et sécurité, je recherche une alternance (année 2026-2027, 1 semaine / 1 semaine). Je maîtrise également le développement fullstack ainsi que le management et la gestion de projets grâce à ma formation DUT."
     },
     "education": {
       "title": "Formation",
@@ -125,7 +120,6 @@
       "spokenLabel": "Langues parlées :"
     },
     "work": {
-      "title": "Projets",
       "cvProjects": {
         "paired_cv": {
         "title": "Service de partage de fichiers « Paired »",
@@ -328,7 +322,6 @@
     }
   },
   "en": {
-    "siteTitle": "Maxandre",
     "header": {
       "name": "Maxandre",
       "greeting": {
@@ -339,21 +332,17 @@
     },
     "nav": {
       "home": "Home",
-      "about": "About",
       "skills": "Skills",
       "experience": "Experience",
       "projects": "Projects",
       "education": "Education",
-      "work": "Projects",
       "contact": "Contact"
     },
     "home": {
       "cvButtonLabel": "Download my resume"
     },
     "about": {
-      "title": "About",
-      "bioHtml": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 week / 1 week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree.",
-      "educationTitle": "Education"
+      "bioHtml": "Engineering student at EFREI specializing in networks and security, I am looking for an apprenticeship (2026-2027, 1 week / 1 week). I also have strong fullstack development skills as well as management and project management experience from my DUT degree."
     },
     "education": {
       "title": "Education",
@@ -453,7 +442,6 @@
       "spokenLabel": "Spoken languages:"
     },
     "work": {
-      "title": "Projects",
       "projects": {
         "blackjackpython": {
           "titleHtml": "<a href=\"https://github.com/Maxx-bl/blackjackPython\" target=\"_blank\" rel=\"noopener noreferrer\">BlackJack Python</a>",

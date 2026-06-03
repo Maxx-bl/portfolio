@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 /**
- * Regenerates the "en" section of content.json from the "fr" source via Gemini.
+ * Regenerates the "en" section of content.json from the "fr" source via MyMemory.
  *
  * Usage:
- *   GEMINI_API_KEY=your_key node scripts/translate.js
+ *   node scripts/translate.js
+ *   node scripts/translate.js --email you@example.com   (higher daily quota)
  *
- * Free key (no credit card): https://aistudio.google.com/app/apikey
- * Free tier: 15 req/min, 1 M tokens/day — more than enough for a portfolio.
+ * MyMemory is free with no account or credit card.
+ * Quota: ~5 000 chars/day anonymous, ~50 000 chars/day with --email.
+ * https://mymemory.translated.net/doc/spec.php
  *
- * After running, review the output then commit content.json.
  * Only edit the "fr" section — "en" is fully overwritten each run.
  */
 
@@ -17,25 +18,17 @@ const path  = require('path');
 const https = require('https');
 
 const CONTENT    = path.resolve(__dirname, '../assets/i18n/content.json');
-const API_KEY    = process.env.GEMINI_API_KEY;
-const BATCH_SIZE = 80; // strings per Gemini call (well within token limits)
-
-if (!API_KEY) {
-  console.error('Set GEMINI_API_KEY. Free key (no card) at https://aistudio.google.com/app/apikey');
-  process.exit(1);
-}
+const email      = (() => { const i = process.argv.indexOf('--email'); return i !== -1 ? process.argv[i + 1] : ''; })();
+const DELAY_MS   = 120; // polite delay between requests
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
-function deepClone(obj) {
-  return JSON.parse(JSON.stringify(obj));
-}
+function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
+function sleep(ms)      { return new Promise(r => setTimeout(r, ms)); }
 
-// Recursively collect every string leaf: [{path: [key|index, …], value}]
 function collectLeaves(obj, path = []) {
   if (typeof obj === 'string') return [{ path, value: obj }];
-  if (Array.isArray(obj))
-    return obj.flatMap((v, i) => collectLeaves(v, [...path, i]));
+  if (Array.isArray(obj))     return obj.flatMap((v, i) => collectLeaves(v, [...path, i]));
   if (obj && typeof obj === 'object')
     return Object.entries(obj).flatMap(([k, v]) => collectLeaves(v, [...path, k]));
   return [];
@@ -47,107 +40,73 @@ function setByPath(obj, path, value) {
   cur[path[path.length - 1]] = value;
 }
 
-// Returns true for strings that don't need translation
 function skip(v) {
   if (!v.trim()) return true;
-  if (/^[\d\s/–-]+$/.test(v)) return true;                 // years / periods
-  if (/^https?:\/\//.test(v)) return true;                 // bare URL
-  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return true;  // email
-  if (/^\(?\+?[\d\s()+-]+$/.test(v)) return true;         // phone
-  if (/^&copy;/.test(v)) return true;                      // HTML entity
+  if (/^[\d\s/–-]+$/.test(v)) return true;                // years / periods
+  if (/^https?:\/\//.test(v)) return true;                // bare URL
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return true; // email
+  if (/^\(?\+?[\d\s()+-]+$/.test(v)) return true;        // phone
+  if (/^&copy;/.test(v)) return true;                     // HTML entity
   return false;
 }
 
-// ── Gemini request ────────────────────────────────────────────────────────────
+// ── MyMemory request ──────────────────────────────────────────────────────────
 
-function geminiTranslate(texts) {
+function translate(text) {
   return new Promise((resolve, reject) => {
-    const prompt =
-      `You are a professional translator. Translate the following French strings to English.\n` +
-      `Rules:\n` +
-      `- Return ONLY a valid JSON array with exactly ${texts.length} strings, same order\n` +
-      `- Preserve all HTML tags and href attributes exactly as-is\n` +
-      `- Keep proper nouns, institution names, and technical terms as-is\n` +
-      `- Use a concise, professional tone (portfolio / CV context)\n\n` +
-      `Input:\n${JSON.stringify(texts)}`;
-
-    const body = JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { responseMimeType: 'application/json' },
-    });
-
-    const req = https.request(
-      {
-        hostname: 'generativelanguage.googleapis.com',
-        path: `/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`,
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Content-Length': Buffer.byteLength(body),
-        },
-      },
+    const q  = encodeURIComponent(text.slice(0, 500));
+    const de = email ? `&de=${encodeURIComponent(email)}` : '';
+    https.get(
+      `https://api.mymemory.translated.net/get?q=${q}&langpair=fr|en${de}`,
       res => {
         let data = '';
         res.on('data', c => (data += c));
         res.on('end', () => {
-          if (res.statusCode !== 200) {
-            reject(new Error(`Gemini ${res.statusCode}: ${data}`));
-            return;
-          }
           try {
-            const payload  = JSON.parse(data);
-            const text     = payload.candidates[0].content.parts[0].text;
-            const result   = JSON.parse(text);
-            if (!Array.isArray(result) || result.length !== texts.length) {
-              reject(new Error(`Gemini returned ${result.length} items, expected ${texts.length}`));
-              return;
+            const parsed = JSON.parse(data);
+            if (parsed.responseStatus === 200 || parsed.responseStatus === '200') {
+              resolve(parsed.responseData.translatedText);
+            } else {
+              reject(new Error(`MyMemory: ${parsed.responseDetails || parsed.responseStatus}`));
             }
-            resolve(result);
           } catch (e) {
-            reject(new Error(`Failed to parse Gemini response: ${e.message}\n${data}`));
+            reject(new Error(`Parse error: ${e.message}\n${data}`));
           }
         });
       }
-    );
-    req.on('error', reject);
-    req.write(body);
-    req.end();
+    ).on('error', reject);
   });
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const content = JSON.parse(fs.readFileSync(CONTENT, 'utf8'));
-  const fr = content.fr;
-  const en = deepClone(fr);
-
+  const content     = JSON.parse(fs.readFileSync(CONTENT, 'utf8'));
+  const fr          = content.fr;
+  const en          = deepClone(fr);
   const leaves      = collectLeaves(fr);
   const toTranslate = leaves.filter(l => !skip(l.value));
-  const skipped     = leaves.length - toTranslate.length;
 
-  console.log(`Found ${leaves.length} strings → translating ${toTranslate.length}, skipping ${skipped}`);
+  console.log(`Found ${leaves.length} strings → translating ${toTranslate.length}, skipping ${leaves.length - toTranslate.length}`);
+  if (email) console.log(`Using email quota: ${email}`);
 
-  const totalBatches = Math.ceil(toTranslate.length / BATCH_SIZE);
-  for (let i = 0; i < toTranslate.length; i += BATCH_SIZE) {
-    const batch   = toTranslate.slice(i, i + BATCH_SIZE);
-    const batchNo = Math.floor(i / BATCH_SIZE) + 1;
-    process.stdout.write(`  batch ${batchNo}/${totalBatches}… `);
-
-    const translated = await geminiTranslate(batch.map(l => l.value));
-    batch.forEach((leaf, j) => setByPath(en, leaf.path, translated[j]));
-    console.log('ok');
+  for (let i = 0; i < toTranslate.length; i++) {
+    const leaf = toTranslate[i];
+    process.stdout.write(`  [${i + 1}/${toTranslate.length}] `);
+    const result = await translate(leaf.value);
+    setByPath(en, leaf.path, result);
+    process.stdout.write(`${result.slice(0, 60).replace(/\n/g, ' ')}…\n`);
+    if (i < toTranslate.length - 1) await sleep(DELAY_MS);
   }
 
-  // Hard-coded values that aren't translations
   en.ui.langShort = 'EN';
 
   content.en = en;
   fs.writeFileSync(CONTENT, JSON.stringify(content, null, 2) + '\n', 'utf8');
-  console.log('✓  content.json updated — review then commit.');
+  console.log('\n✓  content.json updated — review then commit.');
 }
 
 main().catch(err => {
-  console.error(err.message);
+  console.error('\n' + err.message);
   process.exit(1);
 });
