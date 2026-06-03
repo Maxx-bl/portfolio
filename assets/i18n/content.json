@@ -20,7 +20,7 @@
       "cvButtonLabel": "Télécharger mon CV"
     },
     "about": {
-      "bioHtml": "Étudiant ingénieur à l'EFREI spécialisé en réseaux et sécurité, je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Je maîtrise la sécurité des applications, conteneurisation, architectures chiffrées, mais également les outils offensifs et le développement full-stack avec une philosophie security by design, zero-trust, least privilege."
+      "bioHtml": "Étudiant ingénieur à l'EFREI (majeure Réseaux & Sécurité), je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Philosophie security-first, least privilege, avec une maîtrise ses outils offensifs, architectures sécurisées, pipelines CI/CD."
     },
     "education": {
       "title": "Formation",
@@ -79,9 +79,9 @@
       "entries": [
         {
           "period": "2026",
-          "role": "DevSecOps & Développement",
+          "role": "Ingénierie logicielle & Sécurité des systèmes",
           "company": "Simutech uae",
-          "descriptionHtml": "Stage ingénierie logicielle et sécurisation des infrastructures cloud.",
+          "descriptionHtml": "Stage ingénierie logicielle et sécurisation des systèmes et infrastructures cloud.",
           "bullets": [
             "Investigation post-attaque, correction de failles et sécurisation des infrastructures VPS", 
             "Développement C# & conception d'une application de post traitement de mesures, tests API & analyse de flux"
@@ -112,7 +112,7 @@
         "paired_cv": {
           "title": "Service de partage de fichiers « Paired »",
           "year": "2026",
-          "description": "Architecture Web3/Zero-trust de transfert de fichiers P2P / TURN et messagerie anonyme.",
+          "description": "Architecture zero-trust de transfert de fichiers P2P / TURN et messagerie anonyme.",
           "bullets": [
             "Messagerie chiffrée E2EE avec ECDH-256 et SHA-256",
             "Système sans persistance des données avec nettoyage automatisé des sessions Firebase et Cloudflare Workers",
