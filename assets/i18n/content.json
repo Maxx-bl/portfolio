@@ -94,25 +94,25 @@
           "period": "2026",
           "role": "DevSecOps & Développement",
           "company": "Simutech uae",
-          "descriptionHtml": "Stage ingénierie logicielle et sécurisation des infrasctructures cloud.",
+          "descriptionHtml": "Stage ingénierie logicielle et sécurisation des infrastructures cloud.",
           "bullets": [
-            "Analyse de vulnérabilités et audits de sécurité sur les infrastructures VPS", 
-            "Développement & conception d'une application de post traitement de mesures (tests API, analyse de flux)"
+            "Investigation post-attaque, correction de failles et sécurisation des infrastructures VPS", 
+            "Développement C# & conception d'une application de post traitement de mesures, tests API & analyse de flux"
           ]
         },
         {
           "period": "2025 / 2026",
           "role": "Tuteur",
           "company": "IUT Paris-Saclay",
-          "descriptionHtml": "Cours de soutien en C++ et système Linux aux élèves de première année.",
-          "bullets": ["C++", "Linux", "Enseignement"]
+          "descriptionHtml": "Tutorat et cours de soutien aux élèves de BUT informatique.",
+          "bullets": ["Enseignement des systèmes Linux", "Développement C++"]
         },
         {
           "period": "2024 / 2026",
           "role": "Enseignant particulier",
           "company": "À domicile / distanciel",
-          "descriptionHtml": "Soutien scolaire en Mathématiques, Informatique (élèves lycée), aide aux devoirs / babysitting (élèves primaire).",
-          "bullets": ["Mathématiques", "Informatique", "Pédagogie"]
+          "descriptionHtml": "Soutien scolaire et aide aux devoirs",
+          "bullets": ["Cours de mathématiques et d'informatique niveau lycée", "Aide aux devoirs d'élèves de primaire"]
         }
       ]
     },
@@ -129,8 +129,12 @@
         "paired_cv": {
           "title": "Service de partage de fichiers « Paired »",
           "year": "2026",
-          "description": "Service web de transfert de fichiers P2P / TURN. Sessions éphémères et messagerie anonyme chiffrée de bout en bout.",
-          "bullets": []
+          "description": "Architecture Web3/Zero-trust de transfert de fichiers P2P / TURN et messagerie anonyme.",
+          "bullets": [
+            "Messagerie chiffrée E2EE avec ECDH-256 et SHA-256",
+            "Système sans persistance des données avec nettoyage automatisé des sessions Firebase et Cloudflare Workers",
+            "Déploiement automatisé via pipeline CI/CD (GitHub) vers Cloudflare Workers avec routage réseau peer-to-peer"
+          ]
         },
         "glyphe_cv": {
           "title": "Réseau social « Glyphe »",
