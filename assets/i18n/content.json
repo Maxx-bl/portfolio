@@ -72,7 +72,7 @@
       "qualitiesLabel": "Qualités",
       "qualities": [
         { "label": "Travail d'équipe", "description": "Collaboration avec graphistes et développeurs" },
-        { "label": "Polyvalence",      "description": "Web, Logiciel, Mobile" },
+        { "label": "Polyvalence",      "description": "Sécurité, Développement, Réseaux" },
         { "label": "Pédagogie",        "description": "Cours particuliers à domicile et distanciel" },
         { "label": "Adaptation",       "description": "Apprentissage rapide de technologies / frameworks" }
       ],
