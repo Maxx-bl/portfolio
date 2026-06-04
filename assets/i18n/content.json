@@ -117,7 +117,7 @@
           "bullets": [
             "Messagerie chiffrée E2EE avec ECDH-256 et SHA-256",
             "Système sans persistance des données avec nettoyage automatisé des sessions Firebase et Cloudflare Workers",
-            "Déploiement automatisé via pipeline CI/CD (GitHub) vers Cloudflare Workers avec routage réseau peer-to-peer"
+            "Déploiement automatisé via pipeline CI/CD (GitHub) vers Cloudflare Workers avec routage réseau peer-to-peer et fallback TURN"
           ]
         },
         "glyphe_cv": {
@@ -439,7 +439,7 @@
           "bullets": [
             "E2EE messaging with ECDH-256 and SHA-256",
             "Stateless system with automated session cleanup via Firebase and Cloudflare Workers",
-            "Automated deployment via CI/CD pipeline (GitHub) to Cloudflare Workers with peer-to-peer network routing"
+            "Automated deployment via CI/CD pipeline (GitHub) to Cloudflare Workers with peer-to-peer network routing and TURN fallback"
           ]
         },
         "glyphe_cv": {
