@@ -5,6 +5,7 @@ on:
     paths:
       - 'assets/i18n/content.json'
       - 'scripts/build-cv.js'
+      - 'scripts/photo.jpg'
       - '.github/workflows/build-cv.yml'
   workflow_dispatch:
 
