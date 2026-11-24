@@ -21,7 +21,7 @@
       "cvModal": { "title": "Choisir la langue du CV" }
     },
     "about": {
-      "bioHtml": "Étudiant ingénieur à l'EFREI (majeure Réseaux & Sécurité), je recherche une alternance DevSecOps (1 semaine en entreprise / 1 semaine à l'école). Philosophie security-first, least privilege, avec une maîtrise des outils offensifs, des architectures sécurisées et des pipelines CI/CD."
+      "bioHtml": "Étudiant ingénieur à l'EFREI, je recherche une alternance en Sécurité informatique et Réseaux (1 semaine en entreprise / 1 semaine à l'école). Philosophie security-first, least privilege, avec une maîtrise des outils offensifs et des architectures sécurisées."
     },
     "education": {
       "title": "Formation",
@@ -343,8 +343,7 @@
       "cvModal": { "title": "Choose resume language" }
     },
     "about": {
-      "bioHtml": "Engineering student at EFREI (Networks & Security major), I am looking for a DevSecOps apprenticeship (1 week on-site / 1 week at school). Security-first, least privilege philosophy, with expertise in offensive tools, secure architectures, and CI/CD pipelines."
-    },
+      "bioHtml": "Engineering student at EFREI, I am looking for a Cybersecurity and Networks apprenticeship (1 week in-company / 1 week at school). Security-first and least privilege philosophy, with proficiency in offensive tools and secure architectures."    },
     "education": {
       "title": "Education",
       "entries": [
